@@ -2367,16 +2367,15 @@ table .span24 {
 }
 
 .caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  vertical-align: top;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  content: "";
-  opacity: 0.3;
-  filter: alpha(opacity=30);
+     border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #FFFFFF;
+    content: "";
+    display: inline-block;
+    height: 0;
+    opacity: 0.8;
+    vertical-align: top;
+    width: 0;
 }
 
 .dropdown .caret {
@@ -2584,7 +2583,7 @@ button.close {
   *line-height: 20px;
   color: #333333;
   text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+/*   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); */
   vertical-align: middle;
   cursor: pointer;
   background-color: #f5f5f5;
@@ -3074,7 +3073,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group.open .btn.dropdown-toggle {
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
+   background: url("../img/btn-pat.png") repeat-x scroll 0 0 transparent;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#555555', endColorstr='#222222', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
 .btn-group.open .btn-primary.dropdown-toggle {
@@ -3600,7 +3604,7 @@ input[type="submit"].btn.btn-mini {
     font-weight: 200;
     line-height: 1;
     margin-left: 0;
-    padding: 10px 20px 12px;
+    padding: 11px 20px 12px 10px;
 }
 
 .navbar .navbar-text {
@@ -3952,9 +3956,11 @@ input[type="submit"].btn.btn-mini {
 }
 
 .breadcrumb {
-  padding: 8px 10px;
-  margin: 0 0 18px;
-  list-style: none;
+    left: 5px;
+    list-style: none outside none;
+    margin: 0 0 18px;
+    padding: 8px 10px;
+    position: absolute;
 /*   background-color: #fbfbfb;
   background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
   background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
@@ -4490,7 +4496,7 @@ a.thumbnail:hover {
 
 .label,
 .badge {
-  font-size: 10.998px;
+  font-size: 9px;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
@@ -4505,10 +4511,16 @@ a.thumbnail:hover {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+
+    margin-left: 3px;
+	margin-top:-1px;
+
 }
 
 .badge {
-  padding: 1px 9px 2px;
+
+    margin-left: 3px;
+    padding: 1px 6px 2px;
   -webkit-border-radius: 9px;
      -moz-border-radius: 9px;
           border-radius: 9px;
@@ -4946,8 +4958,8 @@ a.badge:hover {
 
 .pull-right {
     float: right;
-    right: 25px;
-    top: 15px;
+   /*  right: 25px;
+    top: 15px; */
 }
 
 .pull-left {

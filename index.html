@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Splitto Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -45,30 +45,27 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#"><img src="assets/img/logo.png"></a>
-<!--           <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/nav-collapse -->
-			<ul class="nav pull-left" style="margin-top:13px;margin-left:20px;">
-				<li><a href="#">Link</a></li>
-				<li class="divider-vertical"></li>
-				<li class="dropdown">
-				  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Arigato, Jhon Doe <b class="caret"></b></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
+		  	<div class="nest-topleft">	 
+				<ul class="nav pull-left">
+						<li><img src="assets/img/id.png" class="id-photo"></li>
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+						  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Arigato, Jhon Doe <b class="caret"></b></a>
+						  <ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						  </ul>
+						</li>
 				  </ul>
-				</li>
-          </ul>
+		   </div>
+	<div class="nest-topright">	  
+	
 			<div class="btn-group pull-right">
-          <a href="#" class="btn btn-inverse"><i class="icon-user icon-white"></i> User</a>
-          <a href="#" data-toggle="dropdown" class="btn btn-inverse dropdown-toggle"><span class="caret"></span></a>
+			  <a href="#" class="btn btn-none btn-mini"><i class="icon-user icon-white"></i> User</a>
+			  <a href="#" data-toggle="dropdown" class="btn btn-none btn-mini dropdown-toggle"><span class="caret"></span></a>
 				  <ul class="dropdown-menu">
 					<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
 					<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
@@ -79,28 +76,34 @@
 			</div>
 		  
 			 <div class="btn-group pull-right">
-			<button class="btn btn-inverse"><i class="icon-comment icon-white"></i> Task</button>
-			<button class="btn btn-inverse"><i class="icon-globe icon-white"></i> Notification</button>
-			<button class="btn btn-inverse"><i class="icon-envelope icon-white"></i> Messages<span class="badge badge-important">6</span></button>
+					<button class="btn btn-none btn-mini"><i class="icon-comment icon-white"></i> Task <span class="label label-info">Urgent</span></button>
+					<button class="btn btn-none btn-mini"><i class="icon-globe icon-white"></i> Notification<span class="badge badge-important">0</span></button>
+					<button class="btn btn-none btn-mini"><i class="icon-envelope icon-white"></i> Messages<span class="badge badge-important">6</span></button>
 			</div>
-			
+	</div>	
 		
       </div>
     </div>
 	<div class="sub-topnav">
 	<div class="container-fluid" >
 		<div class="row-fluid">
-			<div class="span9">
-	<ul class="breadcrumb">
-        <li><a href="#">Home</a> <span class="divider">/</span></li>
-        <li><a href="#">Library</a> <span class="divider">/</span></li>
-        <li class="active">Data</li>
-    </ul>
-	</div>
-	<div class="span3">
-	<form method="post" class="input-append" action="index.php?uid=1&amp;page=search_page">
-									<input type="text" placeholder="Search..." size="16" class="search_query input-medium" name="query" autocomplete="off"><button class="btn" type="submit"><i class="icon-search"></i></button>
-	</form>
+			<div class="span12">
+			<div class="search-holder">
+			
+				<div class="input-append">
+					<input class="input-medium" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Go!</button>
+				</div>
+				
+			</div>	
+				<ul class="breadcrumb">
+					<li><i class="icon-home"></i></li>
+					<li><a href="#">Home</a> <span class="divider">/</span></li>
+					<li><a href="#">Library</a> <span class="divider">/</span></li>
+					<li class="active">Data</li>
+				</ul>
+			</div>
+			
+	
 	
 			</div>
 		</div>
@@ -122,8 +125,8 @@
                         <div id="left-pane"><!-- SIDEMENU -->
                             <div class="pane-content">
                                	<ul class="topnav">
-								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/dortmund/graphic-design.png">Dashboard<span class="label label-success">New</span></a></li>
-								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/dortmund/login.png"> JavaScript</a></li>
+								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/graphic-design.png">Dashboard<span class="label label-success">New</span></a></li>
+								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/login.png"> JavaScript</a></li>
 									<ul>
 										 <li><a href="#">Cookies</a></li>
 										 <li><a href="#">Events</a></li>
@@ -141,7 +144,7 @@
 									</ul>
 									
 								</li>
-								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/dortmund/config.png"> Tutorials</a>
+								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/config.png"> Tutorials</a>
 									<ul>
 										 <li class="active"><a href="#">HTML</a></li>
 										 <li><a href="#">CSS</a></li>
@@ -493,8 +496,8 @@
 			$(".topnav").accordion({
 				accordion:false,
 				speed: 500,
-				closedSign: '[+]',
-				openedSign: '[-]'
+				closedSign: '<img src="assets/img/plus.png">',
+				openedSign: '<img src="assets/img/minus.png">'
 			});
 		});
 
