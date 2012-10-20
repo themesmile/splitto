@@ -1,4 +1,4 @@
 splitto
 =======
 
-Splitto Admin
+Splitto Admin adalah admin untuk keperluan rahasia
