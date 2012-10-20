@@ -171,7 +171,14 @@
 												<li><a href="#">Contact</a></li>
 											</ul>
 										</li>
-										 <li><a href="#">Tabs</a></li>
+										 <li><a href="#">Tabs</a>
+										 	<ul>
+												<li class="active"><a href="#">JSP</a></li>
+												<li><a href="#">JSF</a></li>
+												<li><a href="#">JPA</a></li>
+												<li><a href="#">Contact</a></li>
+											</ul>
+										</li>
 									</ul>
 								</li>
 								<li><a href="#">Contact<span class="label label-info">4</span></a></li>
@@ -458,6 +465,32 @@
 	
     <script src="assets/js/kendo/kendo.web.min.js"></script>
 	<script src="assets/js/scriptbreaker-multiple-accordion-1.js"></script>	
+	<script src="assets/js/jquery.nicescroll.min.js"></script>
+	
+				<script>
+			  $(document).ready(function() {
+			  
+		
+				$("#right-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:7,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"});
+				$("#left-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:false,cursoropacitymax:0.7,cursorwidth:6,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
+			
+				$("#center-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:6,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
+				// Customizable cursor
+				// $("#boxscroll").niceScroll({touchbehavior:false,cursorcolor:"#00F",cursoropacitymax:0.7,cursorwidth:11,cursorborder:"1px solid #2848BE",cursorborderradius:"8px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
+
+				$("#boxframe").niceScroll("#boxframe",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+				$("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+				
+				$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+				
+			  });
+			</script>
+	
+	
+	
+	
+	
+	
 	        <script>
                 $(document).ready(function() {            		
 					$("#vertical").kendoSplitter({
