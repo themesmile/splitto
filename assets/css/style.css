@@ -118,7 +118,7 @@ body
 #vertical,
 #horizontal
 {
-    height:80%;
+    height:83%;
 }
 
 				
@@ -134,7 +134,7 @@ body
     padding: 0 ;
     position: absolute;
     right: 5px;
-    top: 15px;
+    top: 14px;
 	border-radius:5px;
  	border:1px solid #111;
 	box-shadow: 0 1px 0 #666; 
@@ -255,11 +255,15 @@ ul.topnav ul li {
 }
 
 ul.topnav ul li a {
-	padding-left: 20px;
+	padding-left: 30px;
 	font-size: 10px;
 	font-weight: normal;
 	outline:0;
-	background:#eee;
+	background:#3A444E;
+	border-left:7px solid #000;
+	border-bottom:1px solid #000;
+	text-shadow: none;
+	color:#ccc;
 }
 
 ul.topnav ul li a:hover {
@@ -270,12 +274,13 @@ ul.topnav ul li a:hover {
 
 ul.topnav ul ul li a {
 	color:silver;
-	padding-left: 40px;
+	padding-left: 30px;
+	background:#222;
 }
 
 ul.topnav ul ul li a:hover {
-	background-color:#D3CEB8;
-	color:#675C7C;
+	background-color:#98BD34;
+	color:#000;
 }
 
 ul.topnav span{
