@@ -1,0 +1,58 @@
+#login-wrapper{
+	margin: 100px 0 0 0;
+	padding:15px;
+	background: url("../img/black.png") repeat scroll 0 0 transparent;
+    border: 1px solid #888;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 0 #fff;
+}
+.log-nav {
+    background: none repeat scroll 0 0 #161F28;
+    border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+   /*  box-shadow: 0 0 3px 0 #000000; */
+	padding: 20px 30px 50px;
+}
+.login-inner {
+    background: url("../img/topnav.png") repeat-x scroll 0 0 transparent;
+    min-height: 69px;
+/*     padding-left: 20px;
+    padding-right: 20px; */
+	border-radius: 5px 5px 0 0;
+	 border: 1px solid #000;
+}
+.dark{
+	background: url('./images/dark_grey.jpg');
+}
+.dark input[type=password]{
+	border:1px solid #000;
+    border-radius:5px;
+    color: #888888;
+    padding: 5px 0 5px 25px;
+	background-color:#111;/* url("../img/black.png") repeat scroll 0 0 transparent */;
+	background: url("../img/icons/berlin/lock.png") no-repeat scroll 5px 5px transparent;
+	box-shadow: 0 1px 0 #444;
+	 width: 91%;
+}
+.dark-login input[type=text]{
+	border:1px solid #000;
+    border-radius:5px;
+    color: #888888;
+    padding: 5px 0 5px 25px;
+	background-color:#0C141C /* url("../img/black.png") repeat scroll 0 0 transparent */;
+	background: url("../img/icons/berlin/user.png") no-repeat scroll 5px 5px transparent;
+	box-shadow: 0 1px 0 #444;
+	 width: 91%;
+}
+.brand-login{
+	position:relative;
+	top:10px;
+	left:20px;
+}
+.footer-login{
+	height:50px;
+	border-radius: 0 0 5px 5px;
+	background:#071421;
+	
+
+}

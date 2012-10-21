@@ -22,13 +22,15 @@
 				
 /* TOP NAV */	
 .sub-topnav {
-			background: url("../img/sub-topnav.png") repeat-x scroll 0 0 transparent;
-			min-height: 41px;
-			padding-left: 20px;
-			padding-right: 20px;
+			/* background: url("../img/sub-topnav.png") repeat-x scroll 0 0 transparent; */
+			background: none repeat scroll 0 0 #161F28;
+			border-bottom: 1px solid #000000;
+			min-height: 40px;
 			position: fixed;
-			top: 70px;
+			top: 68px;
 			width: 100%;
+			z-index: 10;
+			box-shadow: 0 0 3px 0 #000000;
 		}
 .navbar-inner {
 		  min-height: 80px;
@@ -123,11 +125,7 @@ body
 				
 				/* SIDEBAR */
 
-.search-holder{
-	right: 45px;
-    position: absolute;
-    top: 4px;
-}
+
 .nest-topright{
 	background: url("../img/black.png") repeat scroll 0 0 transparent;
     padding: 0 ;
@@ -183,26 +181,48 @@ body
 }
 
 img.id-photo{
-	height:28px;
-	padding:2px;
-	background-color:#000;
-	position:relative;
-	left:5px;
-	top:5px
+	background:url("../img/black.png") repeat scroll 0 0 transparent;
+    border-radius: 2px 2px 2px 2px;
+    height: 28px;
+    left: 5px;
+    padding: 3px;
+    position: relative;
+    top: 3px;
 }
 
-
-
-
-
-
+/* =================
+		  SEARCH 
+   ==================*/
+.search-holder{
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.dark{
+	background: url('./images/dark_grey.jpg');
+}
+.dark input[type=text]{
+	border:1px solid #000;
+    border-radius: 5px;
+    color: #888888;183
+    padding: 5px 0 5px 10px;
+	background: url("../img/black.png") repeat scroll 0 0 transparent ;
+	box-shadow: 0 1px 0 #444;
+}
+.breadcrumb a{
+	color:#ccc;
+	 text-shadow: 1px 1px 0 #000;
+}
+.breadcrumb .divider{
+	color:#ccc;
+	 text-shadow: 1px 1px 0 #000;
+}
+/* =================
+		  BAR 
+   ==================*/
 
 .topnav {
-/* 	width: 100%;
-	padding: 0 28px 25px 0!important;
-	position:absolute;
-	left:0;
-	overflow:hidden; */
+
 }
 
 ul.topnav {
@@ -217,11 +237,10 @@ ul.topnav {
 ul.topnav li {	}
 
 ul.topnav li a {
-/* 	border-bottom: 1px solid #DDDDDD; */
+
     color: #666666;
     display: block;
     font-size: 12px;
-/*     font-weight: bold; */
     line-height: 10px;
     padding: 13px 5px;
     text-decoration: none;
@@ -234,10 +253,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-/* 	background-color:#675C7C;
-	color:white; */
 	border-left:7px solid #98bd34;
-	/* padding-left:-6px; */
 }
 
 ul.topnav ul {
@@ -287,7 +303,9 @@ ul.topnav span{
 	
 	}
 
-/* CONTENT */
+/* =============
+    CONTENT
+================*/
 .nest {
     background: url("../img/nest-bg.png") repeat scroll 0 0 #f8f8f8;
     border: 1px solid #CDCDCD;
