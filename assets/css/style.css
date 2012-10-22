@@ -6,7 +6,8 @@
                 	background-color: rgba(60, 70, 80, 0.15);
                 }
                 #left-pane {
-					background: #EEEEEE;				
+					background: #EEEEEE;
+					overflow:hidden;
                 }
                 #center-pane {
 					 background: url("../img/black.png") repeat scroll 0 0 transparent!important;	
