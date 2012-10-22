@@ -302,6 +302,41 @@ ul.topnav span{
 	float:right;
 	
 	}
+.k-splitbar-horizontal .k-collapse-prev, .k-splitbar-horizontal .k-expand-next {
+    background: url("../img/splitter.png") scroll 0 0;
+}
+.k-splitbar-horizontal .k-collapse-prev, .k-splitbar-horizontal .k-expand-next {
+    background-position: 0!important;
+    height: 94px!important;
+    width: 10px!important;
+}
+
+.k-splitbar-horizontal .k-collapse-prev {
+    margin-top: 0!important;
+	position:relative;
+	z-index:10;
+
+}
+.k-splitbar-horizontal .k-collapse-next, .k-splitbar-horizontal .k-expand-prev {
+   background: url("../img/splitter2.png") scroll 0 0;
+   height: 94px!important;
+   width: 6px!important;
+     background-position: 0!important;
+}
+
+.k-splitbar-horizontal .k-collapse-next {
+    margin-top: 11px;
+}
+.k-splitbar-horizontal .k-resize-handle {
+   background-position: 0!important;
+}
+
+.k-splitbar-horizontal .k-icon {
+     margin-top: 0!important;
+	position:relative;
+	z-index:10;
+	top:37% !important;
+}
 
 /* =============
     CONTENT
@@ -310,7 +345,7 @@ ul.topnav span{
     background: url("../img/nest-bg.png") repeat scroll 0 0 #f8f8f8;
     border: 1px solid #CDCDCD;
     clear: both;
-    margin-top: 10px;
+    margin-top: 20px;
 	border-radius:3px;
 }
 
