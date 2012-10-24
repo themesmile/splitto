@@ -367,6 +367,16 @@
         text-shadow: 1px 1px 0 #FFFFFF;
         color:#555555;
     }
+	
+	
+	
+	.slidder-bar-nest{
+	
+	padding: 15px;
+	margin-bottom:30px;
+	
+	
+	}
     .nest .title .titleIcon {
         background: url("../img/nest-bg.png") repeat scroll 0 0 transparent;
         border-bottom: 1px solid #CCCCCC;
@@ -381,9 +391,10 @@
         width: 16px;
     }
     .body-nest{
-    	padding:15px;
+    	padding:5px;
 
     }
+	
     img.sidebar-icon{
     	margin: 0 6px 0 0;
     }
@@ -393,3 +404,38 @@
         display: inline-block;
         margin-left: 15px;
       }
+	  
+	  
+	.field { 
+	width: 100%;  
+	margin: 0 0 40px; 
+	height:1px;
+	}
+	.field input { margin: 0; }
+	h3 span { background: #444; color: #fff; padding: 3px; }
+	pre { background: #f4f4f4; }
+
+	/* Used for the Switch effect: */
+	.cb-enable, .cb-disable, .cb-enable span, .cb-disable span { background: url(../img/switch.gif) repeat-x; display: block; float: left; }
+	.cb-enable span, .cb-disable span { line-height: 30px; display: block; background-repeat: no-repeat; font-weight: bold; }
+	.cb-enable span { background-position: left -90px; padding: 0 10px; }
+	.cb-disable span { background-position: right -180px;padding: 0 10px; }
+	.cb-disable.selected { background-position: 0 -30px; }
+	.cb-disable.selected span { background-position: right -210px; color: #fff; }
+	.cb-enable.selected { background-position: 0 -60px; }
+	.cb-enable.selected span { background-position: left -150px; color: #fff; }
+	.switch label { cursor: pointer; }
+	
+	
+	
+	
+	
+	
+	
+	
+		fieldset { border:0; margin: 3em; height: 12em;}	
+	/* 	label {font-weight: normal; float: none; margin-right: .5em; font-size: 1.1em;} */
+		select {margin-right: 1em; float: none;}
+		.ui-slider {clear: both; top: 2em;}
+		
+		

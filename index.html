@@ -9,7 +9,10 @@
 	<!-- Le styles -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
-<!-- 	 <link href="assets/css/flot.css" rel="stylesheet" type="text/css"> -->
+	<!-- bin/jquery.slider.min.css -->
+		<link rel="stylesheet" href="assets/css/redmond/jquery-ui-1.7.1.custom.css" type="text/css" />
+	<link rel="Stylesheet" href="assets/css/ui.slider.extras.css" type="text/css" />
+  <!-- end -->
 
 	<style>
 	body {
@@ -17,6 +20,10 @@
 		position: relative;
 		z-index: -2;
 	}
+	 .layout { padding: 50px; font-family: Georgia, serif; }
+	 .layout-slider { margin-bottom: 60px; width: 50%; }
+	 .layout-slider-settings { font-size: 12px; padding-bottom: 10px; }
+	 .layout-slider-settings pre { font-family: Courier; }
 	</style>
 <!-- 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">   -->
 	<link href="assets/css/kendo/kendo.common.min.css" rel="stylesheet">
@@ -201,31 +208,41 @@
 							<div id="g3"></div>
 							<div id="g4"></div>
 							<div id="g5"></div>
-							<div id="g6"></div>
-							<p>
-							  Not digging default style? Then mock your own, Picasso! JustGage features bunch of styling options including gauge width, gauge color and shadow, gauge level colors, colors for title, value, min &amp; max etc. 
-							</p>
-							<p>
-							  Check non-minified version of justgage.js for list of all setup parameters.
-							</p>					
+							<div id="g6"></div>				
   							</div>
-  						</div>
-  						
-  						
-  						
-
-  						
-  						
-  						
-  						
-  						
+  						</div>					
   					</div>
   					<div class="span4">
   						<div class="nest">
-  							<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
+  							<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Style Radio and Checkbox</h6></div>
   							<div class="body-nest">
-  							
-  							Asseeek
+					<h3>The Example:</h3>
+						<p class="field switch">
+						
+							<label for="radio1" class="cb-enable selected"><span>Enable</span></label>
+							<label for="radio2" class="cb-disable"><span>Disable</span></label>
+						</p>
+						<p class="field switch">
+							<label class="cb-enable"><span>On</span></label>
+							<label class="cb-disable selected"><span>Off</span></label>
+						
+						</p>
+						<p class="field switch">
+							<label class="cb-enable"><span>Hidden</span></label>
+							<label class="cb-disable selected"><span>Visible</span></label>
+						
+						</p>
+						<p class="field switch">
+							<label class="cb-enable"><span>Go</span></label>
+							<label class="cb-disable selected"><span>Stop</span></label>
+						
+						</p>
+						<p class="field switch">
+							<label class="cb-enable"><span>Held</span></label>
+							<label class="cb-disable selected"><span>Pass</span></label>
+						
+						</p>
+	
   							</div>
   						</div>
   					</div>
@@ -234,127 +251,252 @@
   							<div class="nest">
   								<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
   								<div class="body-nest">
-  									
-  									<table class="table order-tbl">
-  										<thead>
-  											<tr>
-  												<th class="center"> <input type="checkbox" id="checkbox" name="checkbox">
-  												</th>
-  												<th> Order# </th>
-  												<th> Details </th>
-  												<th class="center"> Status </th>
-  												<th class="center"> Price </th>
-  												<th class="center"> Action </th>
-  											</tr>
-  										</thead>
-  										<tbody>
-  											<tr>
-  												<td class="center"><input type="checkbox" name="checkbox1"></td>
-  												<td> #3201 </td>
-  												<td><a href="#">Pemium Hosting Plan</a></td>
-  												<td><span class="label label-important">Pending</span></td>
-  												<td> $650.50 </td>
-  												<td><div class="btn-group pull-right">
-  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
-  													<ul class="dropdown-menu">
-  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
-  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
-  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
-  														<li class="divider"></li>
-  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
-  													</ul>
-  												</div></td>
-  											</tr>
-  											<tr>
-  												<td class="center"><input type="checkbox" name="checkbox2"></td>
-  												<td> #4586 </td>
-  												<td><a href="#">Regular Hosting</a></td>
-  												<td><span class="label label-important">Pending</span></td>
-  												<td> $56.50 </td>
-  												<td><div class="btn-group pull-right">
-  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
-  													<ul class="dropdown-menu">
-  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
-  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
-  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
-  														<li class="divider"></li>
-  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
-  													</ul>
-  												</div></td>
-  											</tr>
-  											<tr>
-  												<td class="center"><input type="checkbox" name="checkbox3"></td>
-  												<td> #5643 </td>
-  												<td><a href="#">A Premium Theme</a></td>
-  												<td><span class="label label-important">Pending</span></td>
-  												<td> $50.50 </td>
-  												<td><div class="btn-group pull-right">
-  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
-  													<ul class="dropdown-menu">
-  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
-  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
-  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
-  														<li class="divider"></li>
-  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
-  													</ul>
-  												</div></td>
-  											</tr>
-  											<tr>
-  												<td class="center"><input type="checkbox" name="checkbox4"></td>
-  												<td> #6458 </td>
-  												<td><a href="#">One Domain</a></td>
-  												<td><span class="label label-important">Pending</span></td>
-  												<td> $10.50 </td>
-  												<td><div class="btn-group pull-right">
-  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
-  													<ul class="dropdown-menu">
-  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
-  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
-  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
-  														<li class="divider"></li>
-  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
-  													</ul>
-  												</div></td>
-  											</tr>
-  											<tr>
-  												<td class="center"><input type="checkbox" name="checkbox5"></td>
-  												<td> #7896 </td>
-  												<td><a href="#">Platinum Pack</a></td>
-  												<td><span class="label label-important">Pending</span></td>
-  												<td> $98.50 </td>
-  												<td><div class="btn-group pull-right">
-  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
-  													<ul class="dropdown-menu">
-  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
-  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
-  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
-  														<li class="divider"></li>
-  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
-  													</ul>
-  												</div></td>
-  											</tr>
-  											<tr>
-  												<td class="center"><input type="checkbox" name="checkbox6"></td>
-  												<td> #8956 </td>
-  												<td><a href="#">Gold Pack</a></td>
-  												<td><span class="label label-important">Pending</span></td>
-  												<td> $60.50 </td>
-  												<td><div class="btn-group pull-right dropup">
-  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
-  													<ul class="dropdown-menu">
-  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
-  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
-  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
-  														<li class="divider"></li>
-  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
-  													</ul>
-  												</div></td>
-  											</tr>
-  										</tbody>
-  									</table>
-  									
-  									
-  									
+								<div class="slidder-bar-nest">
+  									<form action="#">
+		<!-- demo 1 -->
+		<fieldset>
+			<label for="speed">Select a Speed:</label>
+			<select name="speed" id="speed">
+				<option value="Slower">Slower</option>
+				<option value="Slow">Slow</option>
+				<option value="Med" selected="selected">Med</option>
+				<option value="Fast">Fast</option>
+				<option value="Faster">Faster</option>
+			</select>
+		</fieldset>
+		
+		<!-- demo 2 -->
+		<fieldset>
+			<label for="valueA">From:</label>
+			<select name="valueA" id="valueA">
+				<option value="6am">6:00</option>
+				<option value="7am">7:00</option>
+				<option value="8am">8:00</option>
+				<option value="9am" selected="selected">9:00</option>
+				<option value="10am">10:00</option>
+				<option value="11am">11:00</option>
+				<option value="Noon">Noon</option>
+				<option value="1pm">1:00</option>
+				<option value="2pm">2:00</option>
+				<option value="3pm">3:00</option>
+				<option value="4pm">4:00</option>
+				<option value="5pm">5:00</option>
+				<option value="6pm">6:00</option>
+				<option value="7pm">7:00</option>
+				<option value="8pm">8:00</option>
+				<option value="9pm">9:00</option>
+				<option value="10pm">10:00</option>
+				<option value="11pm">11:00</option>
+				<option value="12pm">12:00</option>
+			</select>
+	
+			<label for="valueB">To:</label>
+			<select name="valueB" id="valueB">
+				<option value="6am">6:00</option>
+				<option value="7am">7:00</option>
+				<option value="8am">8:00</option>
+				<option value="9am">9:00</option>
+				<option value="10am">10:00</option>
+				<option value="11am">11:00</option>
+				<option value="Noon">Noon</option>
+				<option value="1pm">1:00</option>
+				<option value="2pm">2:00</option>
+				<option value="3pm">3:00</option>
+				<option value="4pm">4:00</option>
+				<option value="5pm">5:00</option>
+				<option value="6pm">6:00</option>
+				<option value="7pm">7:00</option>
+				<option value="8pm">8:00</option>
+				<option value="9pm" selected="selected">9:00</option>
+				<option value="10pm">10:00</option>
+				<option value="11pm">11:00</option>
+				<option value="12pm">12:00</option>
+			</select>
+		</fieldset>
+		
+		
+		<!-- demo 3 -->
+		<fieldset>
+			<label for="valueAA">From:</label>
+			<select name="valueAA" id="valueAA">
+				<optgroup label="2003">
+					<option value="01/03">Jan 03</option>
+					<option value="02/03">Feb 03</option>
+					<option value="03/03">Mar 03</option>
+					<option value="03/03">Apr 03</option>
+					<option value="03/03">May 03</option>
+					<option value="06/03">Jun 03</option>
+					<option value="07/03">Jul 03</option>
+					<option value="08/03" selected="selected">Aug 03</option>
+					<option value="09/03">Sep 03</option>
+					<option value="10/03">Oct 03</option>
+					<option value="11/03">Nov 03</option>
+					<option value="12/03">Dec 03</option>
+				</optgroup>
+				<optgroup label="2004">
+					<option value="01/04">Jan 04</option>
+					<option value="02/04">Feb 04</option>
+					<option value="03/04">Mar 04</option>
+					<option value="04/04">Apr 04</option>
+					<option value="04/04">May 04</option>
+					<option value="06/04">Jun 04</option>
+					<option value="07/04">Jul 04</option>
+					<option value="08/04">Aug 04</option>
+					<option value="09/04">Sep 04</option>
+					<option value="10/04">Oct 04</option>
+					<option value="11/04">Nov 04</option>
+					<option value="12/04">Dec 04</option>
+				</optgroup>
+				<optgroup label="2005">
+					<option value="01/05">Jan 05</option>
+					<option value="02/05">Feb 05</option>
+					<option value="03/05">Mar 05</option>
+					<option value="04/05">Apr 05</option>
+					<option value="05/05">May 05</option>
+					<option value="06/05">Jun 05</option>
+					<option value="07/05">Jul 05</option>
+					<option value="08/05">Aug 05</option>
+					<option value="09/05">Sep 05</option>
+					<option value="10/05">Oct 05</option>
+					<option value="11/05">Nov 05</option>
+					<option value="12/05">Dec 05</option>
+				</optgroup>
+				<optgroup label="2006">
+					<option value="01/06">Jan 06</option>
+					<option value="02/06">Feb 06</option>
+					<option value="03/06">Mar 06</option>
+					<option value="04/06">Apr 06</option>
+					<option value="06/06">May 06</option>
+					<option value="06/06">Jun 06</option>
+					<option value="07/06">Jul 06</option>
+					<option value="08/06">Aug 06</option>
+					<option value="09/06">Sep 06</option>
+					<option value="10/06">Oct 06</option>
+					<option value="11/06">Nov 06</option>
+					<option value="12/06">Dec 06</option>
+				</optgroup>
+				<optgroup label="2007">
+					<option value="01/07">Jan 07</option>
+					<option value="02/07">Feb 07</option>
+					<option value="03/07">Mar 07</option>
+					<option value="04/07">Apr 07</option>
+					<option value="07/07">May 07</option>
+					<option value="07/07">Jun 07</option>
+					<option value="07/07">Jul 07</option>
+					<option value="08/07">Aug 07</option>
+					<option value="09/07">Sep 07</option>
+					<option value="10/07">Oct 07</option>
+					<option value="11/07">Nov 07</option>
+					<option value="12/07">Dec 07</option>
+				</optgroup>
+				<optgroup label="2008">
+					<option value="01/08">Jan 08</option>
+					<option value="02/08">Feb 08</option>
+					<option value="03/08">Mar 08</option>
+					<option value="04/08">Apr 08</option>
+					<option value="08/08">May 08</option>
+					<option value="08/08">Jun 08</option>
+					<option value="08/08">Jul 08</option>
+					<option value="08/08">Aug 08</option>
+					<option value="09/08">Sep 08</option>
+					<option value="10/08">Oct 08</option>
+					<option value="11/08">Nov 08</option>
+					<option value="12/08">Dec 08</option>
+				</optgroup>
+			</select>
+	
+			<label for="valueBB">To:</label>
+			<select name="valueBB" id="valueBB">
+				<optgroup label="2003">
+					<option value="01/03">Jan 03</option>
+					<option value="02/03">Feb 03</option>
+					<option value="03/03">Mar 03</option>
+					<option value="03/03">Apr 03</option>
+					<option value="03/03">May 03</option>
+					<option value="06/03">Jun 03</option>
+					<option value="07/03">Jul 03</option>
+					<option value="08/03">Aug 03</option>
+					<option value="09/03">Sep 03</option>
+					<option value="10/03">Oct 03</option>
+					<option value="11/03">Nov 03</option>
+					<option value="12/03">Dec 03</option>
+				</optgroup>
+				<optgroup label="2004">
+					<option value="01/04">Jan 04</option>
+					<option value="02/04">Feb 04</option>
+					<option value="03/04">Mar 04</option>
+					<option value="04/04">Apr 04</option>
+					<option value="04/04">May 04</option>
+					<option value="06/04">Jun 04</option>
+					<option value="07/04">Jul 04</option>
+					<option value="08/04">Aug 04</option>
+					<option value="09/04">Sep 04</option>
+					<option value="10/04">Oct 04</option>
+					<option value="11/04">Nov 04</option>
+					<option value="12/04">Dec 04</option>
+				</optgroup>
+				<optgroup label="2005">
+					<option value="01/05">Jan 05</option>
+					<option value="02/05">Feb 05</option>
+					<option value="03/05">Mar 05</option>
+					<option value="04/05">Apr 05</option>
+					<option value="05/05">May 05</option>
+					<option value="06/05">Jun 05</option>
+					<option value="07/05">Jul 05</option>
+					<option value="08/05">Aug 05</option>
+					<option value="09/05">Sep 05</option>
+					<option value="10/05">Oct 05</option>
+					<option value="11/05">Nov 05</option>
+					<option value="12/05">Dec 05</option>
+				</optgroup>
+				<optgroup label="2006">
+					<option value="01/06">Jan 06</option>
+					<option value="02/06">Feb 06</option>
+					<option value="03/06">Mar 06</option>
+					<option value="04/06">Apr 06</option>
+					<option value="06/06">May 06</option>
+					<option value="06/06">Jun 06</option>
+					<option value="07/06">Jul 06</option>
+					<option value="08/06">Aug 06</option>
+					<option value="09/06">Sep 06</option>
+					<option value="10/06">Oct 06</option>
+					<option value="11/06">Nov 06</option>
+					<option value="12/06">Dec 06</option>
+				</optgroup>
+				<optgroup label="2007">
+					<option value="01/07">Jan 07</option>
+					<option value="02/07">Feb 07</option>
+					<option value="03/07">Mar 07</option>
+					<option value="04/07">Apr 07</option>
+					<option value="07/07">May 07</option>
+					<option value="07/07">Jun 07</option>
+					<option value="07/07">Jul 07</option>
+					<option value="08/07" selected="selected">Aug 07</option>
+					<option value="09/07">Sep 07</option>
+					<option value="10/07">Oct 07</option>
+					<option value="11/07">Nov 07</option>
+					<option value="12/07">Dec 07</option>
+				</optgroup>
+				<optgroup label="2008">
+					<option value="01/08">Jan 08</option>
+					<option value="02/08">Feb 08</option>
+					<option value="03/08">Mar 08</option>
+					<option value="04/08">Apr 08</option>
+					<option value="08/08">May 08</option>
+					<option value="08/08">Jun 08</option>
+					<option value="08/08">Jul 08</option>
+					<option value="08/08">Aug 08</option>
+					<option value="09/08">Sep 08</option>
+					<option value="10/08">Oct 08</option>
+					<option value="11/08">Nov 08</option>
+					<option value="12/08">Dec 08</option>
+				</optgroup>
+			</select>
+		</fieldset>
+	</form>
+	
+	</div>
+  	
   								</div>
   							</div>
   						</div>
@@ -379,8 +521,8 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
+ 
+<!--     <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>
@@ -391,7 +533,8 @@
     <script src="assets/js/bootstrap-button.js"></script>
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>	
+    <script src="assets/js/bootstrap-typeahead.js"></script> -->	
+	<script src="assets/js/jquery.js"></script>
     <script src="assets/js/kendo/kendo.web.min.js"></script>
     <script src="assets/js/scriptbreaker-multiple-accordion-1.js"></script>	
     <script src="assets/js/jquery.nicescroll.min.js"></script>
@@ -399,7 +542,69 @@
 
 	<script src="assets/js/resources/js/raphael.2.1.0.min.js"></script>
     <script src="assets/js/resources/js/justgage.1.0.1.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/jquery-ui-1.7.1.custom.min.js"></script>
+	<script type="text/javascript" src="assets/js/selectToUISlider.jQuery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//demo 1
+			var abc = $('select#speed').selectToUISlider().next();
+					
+			//demo 2
+			$('select#valueA, select#valueB').selectToUISlider();
+		
+			//demo 3
+			$('select#valueAA, select#valueBB').selectToUISlider({
+				labels: 12
+			});
+			
+			//fix color 
+			fixToolTipColor();
+		});
+		//purely for theme-switching demo... ignore this unless you're using a theme switcher
+		//quick function for tooltip color match
+		function fixToolTipColor(){
+			//grab the bg color from the tooltip content - set top border of pointer to same
+			$('.ui-tooltip-pointer-down-inner').each(function(){
+				var bWidth = $('.ui-tooltip-pointer-down-inner').css('borderTopWidth');
+				var bColor = $(this).parents('.ui-slider-tooltip').css('backgroundColor')
+				$(this).css('border-top', bWidth+' solid '+bColor);
+			});	
+		}
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
+<script type="text/javascript">
+$(document).ready( function(){ 
+	$(".cb-enable").click(function(){
+		var parent = $(this).parents('.switch');
+		$('.cb-disable',parent).removeClass('selected');
+		$(this).addClass('selected');
+		$('.checkbox',parent).attr('checked', true);
+	});
+	$(".cb-disable").click(function(){
+		var parent = $(this).parents('.switch');
+		$('.cb-enable',parent).removeClass('selected');
+		$(this).addClass('selected');
+		$('.checkbox',parent).attr('checked', false);
+	});
+});
+</script>
+  
+  
+  
 	    <script>
       var g1, g3, g4, g5, g6;
       
