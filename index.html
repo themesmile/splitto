@@ -1,254 +1,381 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Splitto Admin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+	<meta charset="utf-8">
+	<title>Splitto Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 109px;
+<!-- 	 <link href="assets/css/flot.css" rel="stylesheet" type="text/css"> -->
+
+	<style>
+	body {
+		padding-top: 109px;
 		position: relative;
 		z-index: -2;
-      }
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">  
+	}
+	</style>
+<!-- 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">   -->
 	<link href="assets/css/kendo/kendo.common.min.css" rel="stylesheet">
-    <link href="assets/css/kendo/kendo.default.min.css" rel="stylesheet">
+	<link href="assets/css/kendo/kendo.default.min.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+      <!-- Le fav and touch icons -->
+      <link rel="shortcut icon" href="assets/ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
+  	<div class="navbar navbar-fixed-top">
+  		<div class="navbar-inner">
 
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#"><img src="assets/img/logo.png"></a>
-		  	<div class="nest-topleft">	 
-				<ul class="nav pull-left">
-						<li><img src="assets/img/id.png" class="id-photo"></li>
-						<li class="divider-vertical"></li>
-						<li class="dropdown">
-						  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Arigato, Jhon Doe <b class="caret"></b></a>
-						  <ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						  </ul>
-						</li>
-				  </ul>
-		   </div>
-	<div class="nest-topright">	  
-	
-			<div class="btn-group pull-right">
-			  <a href="#" class="btn btn-none btn-mini"><i class="icon-off icon-white"></i> Log Out</a>
-			  <a href="#" data-toggle="dropdown" class="btn btn-none btn-mini dropdown-toggle"><span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-					<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-					<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
-					<li class="divider"></li>
-					<li><a href="#"><i class="i"></i> Make admin</a></li>
-				  </ul>
-			</div>
-			<div class="btn-group pull-right">
-							<a class="btn btn-none btn-mini dropdown-toggle" data-toggle="dropdown" href="#">
-							 <i class="icon-cog icon-white"></i>
-							<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-							<!-- dropdown menu links -->
-							</ul>
-			</div>
-	
-	
-			 <div class="btn-group pull-right">
-					<button class="btn btn-none btn-mini"><i class="icon-comment icon-white"></i> Task <span class="label label-info">Urgent</span></button>
-					<button class="btn btn-none btn-mini"><i class="icon-globe icon-white"></i> Notification<span class="badge badge-important">0</span></button>
-					<button class="btn btn-none btn-mini"><i class="icon-envelope icon-white"></i> Messages<span class="badge badge-important">6</span></button>
-			</div>
-			
-				
-			
-	</div>	
-	
-		
-      </div>
-    </div>
-	<div class="sub-topnav">
-	<div class="container-fluid" >
-		<div class="row-fluid">
-			<div class="span12">
-			<div class="search-holder">
-			<div class="dark">
-				<form>
-				<span><input type="text" class="search rounded" placeholder="Search..."></span>
-				</form>
-			</div>
-			
-			</div>	
-				<ul class="breadcrumb">
-					<li><i class="icon-home icon-white"></i></li>
-					<li><a href="#">Home</a> <span class="divider">/</span></li>
-					<li><a href="#">Library</a> <span class="divider">/</span></li>
-					<li class="active">Data</li>
-				</ul>
-			</div>
-			
-	
-	
-			</div>
-		</div>
-	</div>
-	
-	
-    </div>
+  			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  			</a>
+  			<a class="brand" href="#"><img src="assets/img/logo.png"></a>
+  			<div class="nest-topleft">	 
+  				<ul class="nav pull-left">
+  					<li><img src="assets/img/id.png" class="id-photo"></li>
+  					<li class="divider-vertical"></li>
+  					<li class="dropdown">
+  						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Arigato, Jhon Doe <b class="caret"></b></a>
+  						<ul class="dropdown-menu">
+  							<li><a href="#">Action</a></li>
+  							<li><a href="#">Another action</a></li>
+  							<li><a href="#">Something else here</a></li>
+  							<li class="divider"></li>
+  							<li><a href="#">Separated link</a></li>
+  						</ul>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="nest-topright">	  
+  				
+  				<div class="btn-group pull-right">
+  					<a href="#" class="btn btn-none btn-mini"><i class="icon-off icon-white"></i> Log Out</a>
+  					<a href="#" data-toggle="dropdown" class="btn btn-none btn-mini dropdown-toggle"><span class="caret"></span></a>
+  					<ul class="dropdown-menu">
+  						<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+  						<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+  						<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+  						<li class="divider"></li>
+  						<li><a href="#"><i class="i"></i> Make admin</a></li>
+  					</ul>
+  				</div>
+  				<div class="btn-group pull-right">
+  					<a class="btn btn-none btn-mini dropdown-toggle" data-toggle="dropdown" href="#">
+  						<i class="icon-cog icon-white"></i>
+  						<span class="caret"></span>
+  					</a>
+  					<ul class="dropdown-menu">
+  						<!-- dropdown menu links -->
+  					</ul>
+  				</div>
+  				
+  				
+  				<div class="btn-group pull-right">
+  					<button class="btn btn-none btn-mini"><i class="icon-comment icon-white"></i> Task <span class="label label-info">Urgent</span></button>
+  					<button class="btn btn-none btn-mini"><i class="icon-globe icon-white"></i> Notification<span class="badge badge-important">0</span></button>
+  					<button class="btn btn-none btn-mini"><i class="icon-envelope icon-white"></i> Messages<span class="badge badge-important">6</span></button>
+  				</div>
+  				
+  				
+  				
+  			</div>	
+  			
+  			
+  		</div>
+  	</div>
+  	<div class="sub-topnav">
+  		<div class="container-fluid" >
+  			<div class="row-fluid">
+  				<div class="span12">
+  					<div class="search-holder">
+  						<div class="dark">
+  							<form>
+  								<span><input type="text" class="search rounded" placeholder="Search..."></span>
+  							</form>
+  						</div>
+  						
+  					</div>	
+  					<ul class="breadcrumb">
+  						<li><i class="icon-home icon-white"></i></li>
+  						<li><a href="#">Home</a> <span class="divider">/</span></li>
+  						<li><a href="#">Library</a> <span class="divider">/</span></li>
+  						<li class="active">Data</li>
+  					</ul>
+  				</div>
+  				
+  				
+  				
+  			</div>
+  		</div>
+  	</div>
+  	
+  	
+  </div>
 
 
 
-	        <div id="vertical">
-                <div id="top-pane">
-                    <div id="horizontal" style="height: 100%; width: 100%;">
-                        <div id="left-pane"><!-- SIDEMENU -->
-                            <div class="pane-content">
-                               	<ul class="topnav">
-								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/graphic-design.png">Dashboard<span class="label label-success">New</span></a></li>
-								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/login.png"> JavaScript</a></li>
-									<ul>
-										 <li><a href="#">Cookies</a></li>
-										 <li><a href="#">Events</a></li>
-										 <li><a href="#">Forms</a></li>
-										 <li><a href="#">Games</a></li>
-										 <li><a href="#">Images</a></li>
-										 <li><a href="#">Navigations</a>
-											<ul>
-												<li><a href="#">CSS</a></li>
-												<li><a href="#">JavaScript</a></li>
-												<li><a href="#">JQuery</a></li>
-											</ul>
-										</li>
-										 <li><a href="#">Tabs</a></li>
-									</ul>
-									
-								</li>
-								<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/config.png"> Tutorials</a>
-									<ul>
-										 <li class="active"><a href="#">HTML</a></li>
-										 <li><a href="#">CSS</a></li>
-										 <li><a href="#">JavaScript</a></li>
-										 <li><a href="#">Java</a>
-											<ul>
-												<li class="active"><a href="#">JSP</a></li>
-												<li><a href="#">JSF</a></li>
-												<li><a href="#">JPA</a></li>
-												<li><a href="#">Contact</a></li>
-											</ul>
-										</li>
-										 <li><a href="#">Tabs</a>
-										 	<ul>
-												<li class="active"><a href="#">JSP</a></li>
-												<li><a href="#">JSF</a></li>
-												<li><a href="#">JPA</a></li>
-												<li><a href="#">Contact</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="#">Contact<span class="label label-info">4</span></a></li>
-								<li><a href="#">Upload script</a></li>
-								</ul>
-                            </div>
-                        </div>
-						
-						
-						
-                        <div id="center-pane"><!-- Content -->
-                           
-							<div class="container-fluid">
-                 	<div class="row-fluid">
-						<div class="span8">
+  <div id="vertical">
+  	<div id="top-pane">
+  		<div id="horizontal" style="height: 100%; width: 100%;">
+  			<div id="left-pane"><!-- SIDEMENU -->
+  				<div class="pane-content">
+  					<ul class="topnav">
+  						<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/graphic-design.png">Dashboard<span class="label label-success">New</span></a></li>
+  						<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/login.png"> JavaScript</a></li>
+  						<ul>
+  							<li><a href="#">Cookies</a></li>
+  							<li><a href="#">Events</a></li>
+  							<li><a href="#">Forms</a></li>
+  							<li><a href="#">Games</a></li>
+  							<li><a href="#">Images</a></li>
+  							<li><a href="#">Navigations</a>
+  								<ul>
+  									<li><a href="#">CSS</a></li>
+  									<li><a href="#">JavaScript</a></li>
+  									<li><a href="#">JQuery</a></li>
+  								</ul>
+  							</li>
+  							<li><a href="#">Tabs</a></li>
+  						</ul>
+  						
+  					</li>
+  					<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/config.png"> Tutorials</a>
+  						<ul>
+  							<li class="active"><a href="#">HTML</a></li>
+  							<li><a href="#">CSS</a></li>
+  							<li><a href="#">JavaScript</a></li>
+  							<li><a href="#">Java</a>
+  								<ul>
+  									<li class="active"><a href="#">JSP</a></li>
+  									<li><a href="#">JSF</a></li>
+  									<li><a href="#">JPA</a></li>
+  									<li><a href="#">Contact</a></li>
+  								</ul>
+  							</li>
+  							<li><a href="#">Tabs</a>
+  								<ul>
+  									<li class="active"><a href="#">JSP</a></li>
+  									<li><a href="#">JSF</a></li>
+  									<li><a href="#">JPA</a></li>
+  									<li><a href="#">Contact</a></li>
+  								</ul>
+  							</li>
+  						</ul>
+  					</li>
+  					<li><a href="#">Contact<span class="label label-info">4</span></a></li>
+  					<li><a href="#">Upload script</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  		
+  		
+  		
+  		<div id="center-pane"><!-- Content -->
+  			
+  			<div class="container-fluid">
+  				<div class="row-fluid">
+  					<div class="span8">
 
-								<div class="nest">
-									<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/calendar.png"><h6>Chart</h6></div>
-									<div class="body-nest">
-											
+  						<div class="nest">
+  							<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/calendar.png"><h6>JustGage</h6></div>
+  							<div class="body-nest">
 							
-										
-									</div>
-								</div>
-                           
-									
-						
+							<div id="g1"></div>
+							<!-- <div id="g2"></div> -->
+							<div id="g3"></div>
+							<div id="g4"></div>
+							<div id="g5"></div>
+							<div id="g6"></div>
+							<p>
+							  Not digging default style? Then mock your own, Picasso! JustGage features bunch of styling options including gauge width, gauge color and shadow, gauge level colors, colors for title, value, min &amp; max etc. 
+							</p>
+							<p>
+							  Check non-minified version of justgage.js for list of all setup parameters.
+							</p>					
+  							</div>
+  						</div>
+  						
+  						
+  						
 
-									
-						
-                       
-						
-						
-						</div>
-						<div class="span4">
-						<div class="nest">
-						<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
-									<div class="body-nest">
-										
-									<div id="chart" style="width: 300px; height: 250px; margin: 0 auto"></div>
-										
-										
-										
-									</div>
-						</div>
-						</div>
-						<div class="row-fluid">
-						<div class="span12">
-							<div class="nest">
-							<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
-										<div class="body-nest">
-											
- 
-										</div>
-							</div>
-						</div>
-						</div>
-						
-						
-						
-					</div>
-				</div>
-						
-						
-                        </div>
-                        <div id="right-pane"><!-- Right Content -->
-                            <div class="pane-content">
-                                <div id="treeview-sprites"></div>								
-                            </div>
-                        </div><!-- End -->
-                    </div>
-                </div>
-            </div>
-			  
+  						
+  						
+  						
+  						
+  						
+  					</div>
+  					<div class="span4">
+  						<div class="nest">
+  							<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
+  							<div class="body-nest">
+  							
+  							Asseeek
+  							</div>
+  						</div>
+  					</div>
+  					<div class="row-fluid">
+  						<div class="span12">
+  							<div class="nest">
+  								<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
+  								<div class="body-nest">
+  									
+  									<table class="table order-tbl">
+  										<thead>
+  											<tr>
+  												<th class="center"> <input type="checkbox" id="checkbox" name="checkbox">
+  												</th>
+  												<th> Order# </th>
+  												<th> Details </th>
+  												<th class="center"> Status </th>
+  												<th class="center"> Price </th>
+  												<th class="center"> Action </th>
+  											</tr>
+  										</thead>
+  										<tbody>
+  											<tr>
+  												<td class="center"><input type="checkbox" name="checkbox1"></td>
+  												<td> #3201 </td>
+  												<td><a href="#">Pemium Hosting Plan</a></td>
+  												<td><span class="label label-important">Pending</span></td>
+  												<td> $650.50 </td>
+  												<td><div class="btn-group pull-right">
+  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
+  													<ul class="dropdown-menu">
+  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
+  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
+  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
+  														<li class="divider"></li>
+  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
+  													</ul>
+  												</div></td>
+  											</tr>
+  											<tr>
+  												<td class="center"><input type="checkbox" name="checkbox2"></td>
+  												<td> #4586 </td>
+  												<td><a href="#">Regular Hosting</a></td>
+  												<td><span class="label label-important">Pending</span></td>
+  												<td> $56.50 </td>
+  												<td><div class="btn-group pull-right">
+  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
+  													<ul class="dropdown-menu">
+  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
+  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
+  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
+  														<li class="divider"></li>
+  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
+  													</ul>
+  												</div></td>
+  											</tr>
+  											<tr>
+  												<td class="center"><input type="checkbox" name="checkbox3"></td>
+  												<td> #5643 </td>
+  												<td><a href="#">A Premium Theme</a></td>
+  												<td><span class="label label-important">Pending</span></td>
+  												<td> $50.50 </td>
+  												<td><div class="btn-group pull-right">
+  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
+  													<ul class="dropdown-menu">
+  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
+  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
+  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
+  														<li class="divider"></li>
+  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
+  													</ul>
+  												</div></td>
+  											</tr>
+  											<tr>
+  												<td class="center"><input type="checkbox" name="checkbox4"></td>
+  												<td> #6458 </td>
+  												<td><a href="#">One Domain</a></td>
+  												<td><span class="label label-important">Pending</span></td>
+  												<td> $10.50 </td>
+  												<td><div class="btn-group pull-right">
+  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
+  													<ul class="dropdown-menu">
+  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
+  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
+  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
+  														<li class="divider"></li>
+  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
+  													</ul>
+  												</div></td>
+  											</tr>
+  											<tr>
+  												<td class="center"><input type="checkbox" name="checkbox5"></td>
+  												<td> #7896 </td>
+  												<td><a href="#">Platinum Pack</a></td>
+  												<td><span class="label label-important">Pending</span></td>
+  												<td> $98.50 </td>
+  												<td><div class="btn-group pull-right">
+  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
+  													<ul class="dropdown-menu">
+  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
+  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
+  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
+  														<li class="divider"></li>
+  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
+  													</ul>
+  												</div></td>
+  											</tr>
+  											<tr>
+  												<td class="center"><input type="checkbox" name="checkbox6"></td>
+  												<td> #8956 </td>
+  												<td><a href="#">Gold Pack</a></td>
+  												<td><span class="label label-important">Pending</span></td>
+  												<td> $60.50 </td>
+  												<td><div class="btn-group pull-right dropup">
+  													<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i><span class="caret"></span></button>
+  													<ul class="dropdown-menu">
+  														<li><a href="#"><i class="icon-file"></i> View Order</a></li>
+  														<li><a href="#"><i class="icon-edit"></i> Edit Order</a></li>
+  														<li><a href="#"><i class="icon-share-alt"></i> Send Mesage</a></li>
+  														<li class="divider"></li>
+  														<li><a href="#"><i class="icon-minus-sign"></i> Cancel Order</a></li>
+  													</ul>
+  												</div></td>
+  											</tr>
+  										</tbody>
+  									</table>
+  									
+  									
+  									
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  					
+  					
+  					
+  				</div>
+  			</div>
+  			
+  			
+  		</div>
+  		<div id="right-pane"><!-- Right Content -->
+  			<div class="pane-content">
+  				<div id="treeview-sprites"></div>								
+  			</div>
+  		</div><!-- End -->
+  	</div>
+  </div>
+</div>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -264,216 +391,181 @@
     <script src="assets/js/bootstrap-button.js"></script>
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-	
+    <script src="assets/js/bootstrap-typeahead.js"></script>	
     <script src="assets/js/kendo/kendo.web.min.js"></script>
-	<script src="assets/js/scriptbreaker-multiple-accordion-1.js"></script>	
-	<script src="assets/js/jquery.nicescroll.min.js"></script>
-	
-<script src="assets/js/highchart/highcharts.js"></script>
-<script src="assets/js/highchart/highcharts-more.js"></script
-<script src="assets/js/highchart/modules/exporting.js"></script>
+    <script src="assets/js/scriptbreaker-multiple-accordion-1.js"></script>	
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script language="javascript" type="text/javascript" src="assets/js/jquery.flot.js"></script>
 
+	<script src="assets/js/resources/js/raphael.2.1.0.min.js"></script>
+    <script src="assets/js/resources/js/justgage.1.0.1.min.js"></script>
 
-				<script type="text/javascript">
-$(function () {
-	
-    var chart = new Highcharts.Chart({
-	
-	    chart: {
-	        renderTo: 'chart',
-	        type: 'gauge',
-	        plotBackgroundColor: null,
-	        plotBackgroundImage: null,
-	        plotBorderWidth: 0,
-	        plotShadow: false
-	    },
-	    
-	    title: {
-	        text: 'Speedometer'
-	    },
-	    
-	    pane: {
-	        startAngle: -150,
-	        endAngle: 150,
-	        background: [{
-	            backgroundColor: {
-	                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-	                stops: [
-	                    [0, '#FFF'],
-	                    [1, '#333']
-	                ]
-	            },
-	            borderWidth: 0,
-	            outerRadius: '109%'
-	        }, {
-	            backgroundColor: {
-	                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-	                stops: [
-	                    [0, '#333'],
-	                    [1, '#FFF']
-	                ]
-	            },
-	            borderWidth: 1,
-	            outerRadius: '107%'
-	        }, {
-	            // default background
-	        }, {
-	            backgroundColor: '#DDD',
-	            borderWidth: 0,
-	            outerRadius: '105%',
-	            innerRadius: '103%'
-	        }]
-	    },
-	       
-	    // the value axis
-	    yAxis: {
-	        min: 0,
-	        max: 200,
-	        
-	        minorTickInterval: 'auto',
-	        minorTickWidth: 1,
-	        minorTickLength: 10,
-	        minorTickPosition: 'inside',
-	        minorTickColor: '#666',
-	
-	        tickPixelInterval: 30,
-	        tickWidth: 2,
-	        tickPosition: 'inside',
-	        tickLength: 10,
-	        tickColor: '#666',
-	        labels: {
-	            step: 2,
-	            rotation: 'auto'
-	        },
-	        title: {
-	            text: 'km/h'
-	        },
-	        plotBands: [{
-	            from: 0,
-	            to: 120,
-	            color: '#55BF3B' // green
-	        }, {
-	            from: 120,
-	            to: 160,
-	            color: '#DDDF0D' // yellow
-	        }, {
-	            from: 160,
-	            to: 200,
-	            color: '#DF5353' // red
-	        }]        
-	    },
-	
-	    series: [{
-	        name: 'Speed',
-	        data: [80],
-	        tooltip: {
-	            valueSuffix: ' km/h'
-	        }
-	    }]
-	
-	}, 
-	// Add some life
-	function (chart) {
-	    setInterval(function () {
-	        var point = chart.series[0].points[0],
-	            newVal,
-	            inc = Math.round((Math.random() - 0.5) * 20);
-	        
-	        newVal = point.y + inc;
-	        if (newVal < 0 || newVal > 200) {
-	            newVal = point.y - inc;
-	        }
-	        
-	        point.update(newVal);
-	        
-	    }, 3000);
-	});
-});
-		</script>
+	    <script>
+      var g1, g3, g4, g5, g6;
+      
+      window.onload = function(){
+      var g1 = new JustGage({
+        id: "g1", 
+        value: getRandomInt(0, 100), 
+        min: 0,
+        max: 100,
+        title: "Custom Width",
+        label: "Concurrent Visits",    
+        gaugeWidthScale: 0.3          
+      });
+      
 
+      
+      var g3 = new JustGage({
+        id: "g3", 
+        value: getRandomInt(0, 100), 
+        min: 0,
+        max: 100,
+        title: "Custom Colors",
+        label: "",  
+        levelColors: [
+          "#00fff6",
+          "#ff00fc",
+          "#1200ff"
+        ]          
+      });
+      
+      var g4 = new JustGage({
+        id: "g4", 
+        value: getRandomInt(0, 100), 
+        min: 0,
+        max: 100,
+        title: "Hide Labels",
+		label: "Concurrent Visits",  
+        showMinMax: false       
+      });
+     
+      
+      var g5 = new JustGage({
+        id: "g5", 
+        value: getRandomInt(0, 100), 
+        min: 0,
+        max: 100,
+        title: "Animation Type",
+        label: "",  
+        startAnimationTime: 2000,
+        startAnimationType: ">",
+        refreshAnimationTime: 1000,
+        refreshAnimationType: "bounce"                
+      });
+      
+      var g6 = new JustGage({
+        id: "g6", 
+        value: getRandomInt(0, 100), 
+        min: 0,
+        max: 100,
+        title: "Minimal",
+        label: "",  
+        showMinMax: false,
+        gaugeColor: "#fff",
+        levelColors: ["#000"],
+        showInnerShadow: false,        
+        startAnimationTime: 1,
+        startAnimationType: "linear",
+        refreshAnimationTime: 1,
+        refreshAnimationType: "linear"          
+      });
+      
+        setInterval(function() {
+          g1.refresh(getRandomInt(0, 100));
+          g2.refresh(getRandomInt(0, 100));          
+          g3.refresh(getRandomInt(0, 100));
+          g4.refresh(getRandomInt(0, 100));
+          g5.refresh(getRandomInt(0, 100));          
+          g6.refresh(getRandomInt(0, 100));
+        }, 2500);
+      };
+    </script>
 	
-				<script>
-			  $(document).ready(function() {
-			  
-		
-				$("#right-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:7,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"});
+	
+	
+    <script>
+    $(document).ready(function() {
+    	
+    	
+    	$("#right-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:7,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"});
 				$("#left-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:false,cursoropacitymax:0.7,cursorwidth:6,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
-			
+				
 				$("#center-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:6,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 				// Customizable cursor
 				// $("#boxscroll").niceScroll({touchbehavior:false,cursorcolor:"#00F",cursoropacitymax:0.7,cursorwidth:11,cursorborder:"1px solid #2848BE",cursorborderradius:"8px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 
 
 				
-			  });
-			</script>
-	
-	
-	
-	
-	
-	
-	        <script>
-                $(document).ready(function() {            		
-					$("#vertical").kendoSplitter({
-						orientation: "vertical",
-						panes: [
-							{ collapsible: false, size: "200px" },
-							{ collapsible: false },
-							{ collapsible: false, resizable: false, size: "90%" }
-						]
-					});
-
-					$("#horizontal").kendoSplitter({
-						panes: [
-							{ collapsible: true, min: "150px", max: "400px" },
-							{ collapsible: false, size: "70%" },
-							{ collapsible: true, resizable: true, min: "150px", max: "400px" }
-						],
-						orientation: "horizontal"
-					});
-                });
-            </script>
-			<script>
-                $("#treeview-sprites").kendoTreeView({
-                    dataSource: [{
-                        text: "My Documents", expanded: true, spriteCssClass: "rootfolder", items: [
-                            {
-                                text: "Kendo UI Project", expanded: true, spriteCssClass: "folder", items: [
-                                    { text: "about.html", spriteCssClass: "html" },
-                                    { text: "index.html", spriteCssClass: "html" },
-                                    { text: "logo.png", spriteCssClass: "image" }
-                                ]
-                            },
-                            {
-                                text: "New Web Site", expanded: true, spriteCssClass: "folder", items: [
-                                    { text: "mockup.jpg", spriteCssClass: "image" },
-                                    { text: "Research.pdf", spriteCssClass: "pdf" },
-                                ]
-                            },
-                            {
-                                text: "Reports", expanded: true, spriteCssClass: "folder", items: [
-                                    { text: "February.pdf", spriteCssClass: "pdf" },
-                                    { text: "March.pdf", spriteCssClass: "pdf" },
-                                    { text: "April.pdf", spriteCssClass: "pdf" }
-                                ]
-                            }
-                        ]
-                    }]
-                });
-            </script>
-					<script language="JavaScript">
-
-		$(document).ready(function() {
-			$(".topnav").accordion({
-				accordion:false,
-				speed: 500,
-				closedSign: '<img src="assets/img/plus.png">',
-				openedSign: '<img src="assets/img/minus.png">'
 			});
-		});
+    </script>
+    
+    
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {            		
+    	$("#vertical").kendoSplitter({
+    		orientation: "vertical",
+    		panes: [
+    		{ collapsible: false, size: "200px" },
+    		{ collapsible: false },
+    		{ collapsible: false, resizable: false, size: "90%" }
+    		]
+    	});
 
-		</script>
-  </body>
+    	$("#horizontal").kendoSplitter({
+    		panes: [
+    		{ collapsible: true, min: "150px", max: "400px" },
+    		{ collapsible: false, size: "70%" },
+    		{ collapsible: true, resizable: true, min: "150px", max: "400px" }
+    		],
+    		orientation: "horizontal"
+    	});
+    });
+    </script>
+    <script>
+    $("#treeview-sprites").kendoTreeView({
+    	dataSource: [{
+    		text: "My Documents", expanded: true, spriteCssClass: "rootfolder", items: [
+    		{
+    			text: "Kendo UI Project", expanded: true, spriteCssClass: "folder", items: [
+    			{ text: "about.html", spriteCssClass: "html" },
+    			{ text: "index.html", spriteCssClass: "html" },
+    			{ text: "logo.png", spriteCssClass: "image" }
+    			]
+    		},
+    		{
+    			text: "New Web Site", expanded: true, spriteCssClass: "folder", items: [
+    			{ text: "mockup.jpg", spriteCssClass: "image" },
+    			{ text: "Research.pdf", spriteCssClass: "pdf" },
+    			]
+    		},
+    		{
+    			text: "Reports", expanded: true, spriteCssClass: "folder", items: [
+    			{ text: "February.pdf", spriteCssClass: "pdf" },
+    			{ text: "March.pdf", spriteCssClass: "pdf" },
+    			{ text: "April.pdf", spriteCssClass: "pdf" }
+    			]
+    		}
+    		]
+    	}]
+    });
+    </script>
+    <script language="JavaScript">
+
+    $(document).ready(function() {
+    	$(".topnav").accordion({
+    		accordion:false,
+    		speed: 500,
+    		closedSign: '<img src="assets/img/plus.png">',
+    		openedSign: '<img src="assets/img/minus.png">'
+    	});
+    });
+
+    </script>
+</body>
 </html>
+
