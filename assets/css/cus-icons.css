@@ -32,9 +32,8 @@ span.icon:hover {
 	background-color: rgba( 225, 225, 225, 0.9);
 
 }
-.icon-nest{
-	background:red;
-	padding:15px;
+.icons-nest{
+	padding:15px 0 0 25px;
 
 }
 .cus-accept{ background-position: 0 0;  } 

@@ -41,12 +41,12 @@
         var series = [],
             options = {
                 // the color theme used for graphs
-                colors: ["#edc240", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"],
+                colors: ["#96BB35", "#afd8f8", "#4AB6C9", "#A5C409", "#EAAC41"],
                 legend: {
                     show: true,
                     noColumns: 1, // number of colums in legend table
                     labelFormatter: null, // fn: string -> string
-                    labelBoxBorderColor: "#ccc", // border color for the little label boxes
+                    labelBoxBorderColor: "#eee", // border color for the little label boxes
                     container: null, // container (as jQuery object) to put legend in, null means default on top of graph
                     position: "ne", // position of default legend container within plot
                     margin: 5, // distance from grid edge to default legend container within plot
@@ -58,7 +58,7 @@
                     position: "bottom", // or "top"
                     mode: null, // null or "time"
                     color: null, // base color, labels, ticks
-                    tickColor: null, // possibly different color of ticks, e.g. "rgba(0,0,0,0.15)"
+                    tickColor: null, // possibly different color of ticks, e.g. "rgba(0,0,0,0.2)"
                     transform: null, // null or f: number -> number to transform axis
                     inverseTransform: null, // if transform is set, this should be the inverse function
                     min: null, // min. value to show, null means set automatically
@@ -117,7 +117,7 @@
                 grid: {
                     show: true,
                     aboveData: false,
-                    color: "#545454", // primary color used for outline and labels
+                    color: "#777", // primary color used for outline and labels
                     backgroundColor: null, // null for transparent, else color
                     borderColor: null, // set if different from the grid color
                     tickColor: null, // color for the ticks, e.g. "rgba(0,0,0,0.15)"

@@ -7,8 +7,8 @@
         value: getRandomInt(0, 100), 
         min: 0,
         max: 100,
-        title: "Custom Width",
-        label: "Concurrent Visits",    
+        title: "Bandwidth Used",
+        label: "",    
         gaugeWidthScale: 0.3          
       });
       
@@ -19,12 +19,11 @@
         value: getRandomInt(0, 100), 
         min: 0,
         max: 100,
-        title: "Custom Colors",
-        label: "",  
+        title: "Disk Space",
+        label: "",
+		gaugeWidthScale: 0.5, 		
         levelColors: [
-          "#00fff6",
-          "#ff00fc",
-          "#1200ff"
+          "#0675C3",
         ]          
       });
       
@@ -33,41 +32,13 @@
         value: getRandomInt(0, 100), 
         min: 0,
         max: 100,
-        title: "Hide Labels",
-		label: "Concurrent Visits",  
+		gaugeColor: "#333",
+        levelColors: ["#98BD34"],
+        title: "Visitor",
+		label: "03-10-2011",  
         showMinMax: false       
       });
      
-      
-      var g5 = new JustGage({
-        id: "g5", 
-        value: getRandomInt(0, 100), 
-        min: 0,
-        max: 100,
-        title: "Animation Type",
-        label: "",  
-        startAnimationTime: 2000,
-        startAnimationType: ">",
-        refreshAnimationTime: 1000,
-        refreshAnimationType: "bounce"                
-      });
-      
-      var g6 = new JustGage({
-        id: "g6", 
-        value: getRandomInt(0, 100), 
-        min: 0,
-        max: 100,
-        title: "Minimal",
-        label: "",  
-        showMinMax: false,
-        gaugeColor: "#fff",
-        levelColors: ["#000"],
-        showInnerShadow: false,        
-        startAnimationTime: 1,
-        startAnimationType: "linear",
-        refreshAnimationTime: 1,
-        refreshAnimationType: "linear"          
-      });
       
         setInterval(function() {
           g1.refresh(getRandomInt(0, 100));

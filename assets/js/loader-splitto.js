@@ -23,3 +23,7 @@ document.writeln("<script type='text/javascript' src='assets/js/resources/js/jus
 document.writeln("<script type='text/javascript' src='assets/js/jquery-ui-1.7.1.custom.min.js'></script>");
 document.writeln("<script type='text/javascript' src='assets/js/selectToUISlider.jQuery.js'></script>");
 
+document.writeln("<script type='text/javascript' src='assets/js/jquery.flot.js'></script>");
+document.writeln("<script type='text/javascript' src='assets/js/jquery.flot.stack.js'></script>");
+document.writeln("<script type='text/javascript' src='assets/js/jquery.flot.resize.js'></script>");
+
