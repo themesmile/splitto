@@ -24,10 +24,7 @@
 		position: relative;
 		z-index: -2;
 	}
-	 .layout { padding: 50px; font-family: Georgia, serif; }
-	 .layout-slider { margin-bottom: 60px; width: 50%; }
-	 .layout-slider-settings { font-size: 12px; padding-bottom: 10px; }
-	 .layout-slider-settings pre { font-family: Courier; }
+
 	</style>
 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">   
 	<link href="assets/css/kendo/kendo.common.min.css" rel="stylesheet">
@@ -184,12 +181,11 @@
 			<div class="container-fluid">
 				<div class="row-fluid">
 					<div class="span12">
-					
 					<article class="page-header">
 					<h2>Moshi-moshi.., dear user</h2>
 					<p>Huraga is a Star Trek character played by William Dennis Hunt. Huraga was a male Klingon who lived in the 24th century. This great warrior who was known to be an expert storyteller and participated in the Klingon invasion of Cardassia in 2372. Name of the character was not mentioned in dialogues, but it is known from the script.</p>
 					</article>
-
+					
 						<div class="row-fluid">
 							<div class="span4 dahboard-gauge">
 							<div id="g1"></div>
@@ -704,7 +700,7 @@
   					</div>
 					<!-- END -->
   						<div class="row-fluid">
-							<div class="span8">
+							<div class="span7">
 								<div class="nest">
 									<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
 										<div class="body-nest">
@@ -757,41 +753,25 @@
 										</div>
 								</div>
 							</div>
-							<div class="span4">
+							<div class="span5">
 								<div class="nest">
-									<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
+									<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Equalizer & Slider</h6></div>
 										<div class="body-nest">
-												<h3>The Example:</h3>
-												<p class="field switch">
-												
-													<label for="radio1" class="cb-enable selected"><span>Enable</span></label>
-													<label for="radio2" class="cb-disable"><span>Disable</span></label>
-												</p>
-												<p class="field switch">
-													<label class="cb-enable"><span>On</span></label>
-													<label class="cb-disable selected"><span>Off</span></label>
-												
-												</p>
-												<p class="field switch">
-													<label class="cb-enable"><span>Hidden</span></label>
-													<label class="cb-disable selected"><span>Visible</span></label>
-												
-												</p>
-												<p class="field switch">
-													<label class="cb-enable"><span>Go</span></label>
-													<label class="cb-disable selected"><span>Stop</span></label>
-												
-												</p>
-												<p class="field switch">
-													<label class="cb-enable"><span>Held</span></label>
-													<label class="cb-disable selected"><span>Pass</span></label>
-												
-												</p>
+							<div id="wrapper">
+								<input id="slider" class="balSlider" value="0" />
+								<div id="equalizer">
+									<input class="eqSlider" value="10" />
+									<input class="eqSlider" value="5" />
+									<input class="eqSlider" value="0" />
+									<input class="eqSlider" value="10" />
+									<input class="eqSlider" value="15" />
+									<input class="eqSlider" value="20" />
+								</div>
+							</div>
 										</div>
 								</div>
 							</div>
-							
-							
+
 						</div>
   				</div>
   			</div>
@@ -800,8 +780,17 @@
   		</div>
   		<div id="right-pane"><!-- Right Content -->
   			<div class="pane-content">
-  				<div id="treeview-sprites"></div>								
-  			</div>
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="span12">
+					
+							<div id="treeview-sprites"></div>
+					
+						</div>
+					</div>
+				</div>
+
+			</div>
   		</div><!-- End -->
   	</div>
   </div>
@@ -825,16 +814,13 @@
 	<script src="assets/js/custom/iphone-checkbox.js"></script>
 	<!-- KENDO-->	
 	<script src="assets/js/custom/kendo-splitter.js"></script>
+	<script src="assets/js/custom/kendo-tree.js"></script>
+	<script src="assets/js/custom/kendo-equalizer.js"></script>
+
+
 	
 	<script src="assets/js/custom/chart-float-stacking.js"></script>	
 	<script src="assets/js/custom/chart-float-realtime.js"></script> 
-	
-	<script src="assets/js/custom/kendo-tree.js"></script>
-	
-
-	
-
-
 
 </body>
 </html>

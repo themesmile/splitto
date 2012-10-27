@@ -54,7 +54,7 @@
 }
 
 .dataTables_wrapper .ui-toolbar {
-	padding: 12px 10px 10px;
+	padding: 5px 10px;
 }
 
 .dataTables_paginate {
@@ -157,6 +157,8 @@ table.display {
 	clear: both;
 	border-collapse: collapse;
 	font-size:12px;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
 }
 
 table.display tfoot th {
@@ -170,7 +172,7 @@ table.display tr.heading2 td {
 }
 
 table.display td {
-	padding: 3px 10px;
+	padding: 10px 10px;
 }
 
 table.display td.center {
@@ -210,25 +212,27 @@ table.display td.center {
  * DataTables row classes
  */
 table.display tr.odd.gradeA {
-	background-color: #ddffdd;
+/* 	background-color:rgba( 150, 187, 183);
+	color:#000; */
 }
 
 table.display tr.even.gradeA {
-	background-color: #eeffee;
+	/* background-color: #eeffee; */
 }
 
 
 
 
 table.display tr.odd.gradeA {
-	background-color: #ddffdd;
+/* 	background-color:rgba( 150, 187, 183);
+	color:#000; */
 }
 
 table.display tr.even.gradeA {
-	background-color: #eeffee;
+	/* background-color: #eeffee; */
 }
 
-table.display tr.odd.gradeC {
+/* table.display tr.odd.gradeC {
 	background-color: #ddddff;
 }
 
@@ -250,15 +254,17 @@ table.display tr.odd.gradeU {
 
 table.display tr.even.gradeU {
 	background-color: #eee;
-}
+} */
 
 
 tr.odd {
-	background-color: #E2E4FF;
+	background-color:#D0DFA9; 
+	
 }
 
 tr.even {
-	background-color: white;
+	 background-color: #DAEAF7; 
+	
 }
 
 
@@ -359,7 +365,7 @@ table.display tr.odd.row_selected td {
  */
 /* For the standard odd/even */
 tr.odd td.sorting_1 {
-	background-color: #D3D6FF;
+	/* background-color: #D3D6FF; */
 }
 
 tr.odd td.sorting_2 {
@@ -371,7 +377,7 @@ tr.odd td.sorting_3 {
 }
 
 tr.even td.sorting_1 {
-	background-color: #EAEBFF;
+	/* background-color: #EAEBFF; */
 }
 
 tr.even td.sorting_2 {
@@ -394,7 +400,7 @@ tr.even td.sorting_3 {
 	  ee > e2
  */
 tr.odd.gradeA td.sorting_1 {
-	background-color: #c4ffc4;
+	/* background-color: #c4ffc4; */
 }
 
 tr.odd.gradeA td.sorting_2 {
@@ -406,7 +412,7 @@ tr.odd.gradeA td.sorting_3 {
 }
 
 tr.even.gradeA td.sorting_1 {
-	background-color: #d5ffd5;
+	/* background-color: #d5ffd5; */
 }
 
 tr.even.gradeA td.sorting_2 {
