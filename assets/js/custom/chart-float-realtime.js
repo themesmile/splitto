@@ -42,7 +42,7 @@ $(function () {
     var options = {
         series: { shadowSize: 0 }, // drawing is faster without shadows
         yaxis: { min: 0, max: 100 },
-        xaxis: { show: false }
+		xaxis: { min:0, max:100 },	
     };
     var plot = $.plot($("#placeholder4"), [ getRandomData() ], options);
 

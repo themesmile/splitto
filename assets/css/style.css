@@ -1,6 +1,7 @@
 
 #middle-pane {
 	background-color: rgba(60, 70, 80, 0.10);
+	padding:35px 15px 15px
 }
 #bottom-pane {
 	background-color: rgba(60, 70, 80, 0.15);
@@ -10,11 +11,12 @@
 	overflow:hidden;
 }
 #center-pane {
-	background:rgba( 0, 0, 0, 0.15);
+	background:rgba( 0, 0, 0, 0.1);
   
 }
 #right-pane {
     background:rgba( 0, 0, 0, 0.15);
+	padding: 15px;
 }
 .pane-content {
 	padding: 0;
@@ -204,9 +206,10 @@
                border:1px solid #000;
                border-radius: 5px;
                color: #888888;183
-               padding: 5px 0 5px 10px;
+               padding: 5px 0 5px 10px!important;
                background: url("../img/black.png") repeat scroll 0 0 transparent ;
                box-shadow: 0 1px 0 #444;
+			   height:30px;
            }
            .breadcrumb a{
                color:#ccc;
@@ -341,7 +344,8 @@
         CONTENT
         ================*/
         .nest {
-            background: url("../img/nest-bg.png") repeat scroll 0 0 #f8f8f8;
+           /*  background: url("../img/nest-bg.png") repeat scroll 0 0 #f8f8f8; */
+			background:none repeat scroll 0 0 #F7F7F7;
             border: 1px solid #CDCDCD;
             clear: both;
             margin-top: 20px;
@@ -385,7 +389,7 @@
         box-shadow: 0 1px 0 #FFFFFF;
         float: left;
         height: 16px;
-        margin: 0 0 0 10px;
+        margin: 0 0 0 15px;
         padding: 9px 9px 5px;
         width: 16px;
     }
@@ -432,6 +436,8 @@
 		margin-top:-15px;
 	  }
 	  
+	  
+	  
 	.field { 
 	width: 100%;  
 	margin: 0 0 40px; 
@@ -452,16 +458,52 @@
 	.cb-enable.selected span { background-position: left -150px; color: #fff; }
 	.switch label { cursor: pointer; }
 	
-	
-	
-	
-	
-	
-	
-	
 		fieldset { border:0; margin: 3em; height: 12em;}	
 	/* 	label {font-weight: normal; float: none; margin-right: .5em; font-size: 1.1em;} */
 		select {margin-right: 1em; float: none;}
 		.ui-slider {clear: both; top: 2em;}
 				
 				
+/* USER THUMB */
+
+.user-thumb{
+	float:left;
+	margin-right:15px;
+}
+.users-list li{
+	list-style:none;
+}
+/* CHART */
+.chart-info {
+	margin-left:10px;
+	margin-bottom:15px;
+
+}
+.chart-info li{
+	display:inline-block;
+	margin-right:5px;
+}
+.green-cart-info {
+	background:#D0DFA9;
+	padding: 0 15px;
+	margin: 0 5px;
+	border:2px solid #96BB35;
+	border-radius:2px;
+	border-radius:2px;
+}
+.blue-cart-info {
+	background:#B2DDE4;
+	padding: 0 15px;
+	margin: 0 5px;
+	border:2px solid #4AB6C9;
+	border-radius:2px;
+	border-radius:2px;
+}
+.magenta-cart-info {
+	background:#DAEAF7;
+	padding: 0 15px;
+	margin: 0 5px;
+	border:2px solid #AFD8F8;
+	border-radius:2px;
+	border-radius:2px;
+}

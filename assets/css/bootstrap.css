@@ -421,7 +421,9 @@ a:hover {
 }
 
 p {
-  margin: 0 0 9px;
+  /* margin: 0 0 9px; */
+  margin:0;
+  color:#555;
 }
 
 p small {
@@ -512,8 +514,10 @@ h6 {
 
 .page-header {
   padding-bottom: 17px;
-  margin: 18px 0;
-  border-bottom: 1px solid #eeeeee;
+  /* margin: 18px 0; */
+  border-bottom: 1px solid #999;
+  box-shadow:0 1px 0 #FFFFFF;
+  padding-top:25px;
 }
 
 .page-header h1 {
@@ -795,6 +799,7 @@ input[type="color"],
   font-size: 13px;
   line-height: 18px;
   color: #555555;
+  height:30px;
 }
 
 input,
@@ -2552,7 +2557,7 @@ table .span24 {
   line-height: 18px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
+  opacity: 0.8;
   filter: alpha(opacity=20);
 }
 
@@ -3117,7 +3122,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-mini .caret {
-  margin-top: 5px;
+  margin-top: 8px;
+  padding-bottom:6px;
 }
 
 .btn-small .caret {
@@ -3167,7 +3173,7 @@ input[type="submit"].btn.btn-mini {
 .alert .close {
   position: relative;
   top: -2px;
-  right: -21px;
+  right: -30px;
   line-height: 18px;
 }
 
