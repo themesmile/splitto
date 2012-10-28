@@ -272,11 +272,7 @@
 					<!-- END -->
 					<!-- TABLE -->
   					<div class="row-fluid">
-  						<div class="span12">
-  							<div class="nest">
-  								<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Table</h6></div>
-  								<div class="body-nest">
-	
+
 									<table cellpadding="0" cellspacing="10" border="0" class="display" id="example">
 										<thead>
 											<tr>
@@ -693,10 +689,7 @@
 											</tr>
 										</tbody>
 									</table>
-			
-  								</div>
-  							</div>
-  						</div>
+
   					</div>
 					<!-- END -->
   						<div class="row-fluid">
@@ -785,12 +778,58 @@
 						<div class="span12">
 					
 							<div id="treeview-sprites"></div>
-					
+										
 						</div>
 					</div>
 				</div>
+			</div>		
+<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="progress-nest">
+			
+				<div class="progress-bar blue stripes">
+					<span style="width: 40%"></span>
+				</div>
+				<p>Set above to:
+					<a href="#" class="quarter">25%</a> /
+					<a href="#" class="half">50%</a> /
+					<a href="#" class="three-quarters">75%</a> /
+					<a href="#" class="full">100%</a>
 
+				</p>
+			
+				<div class="progress-bar orange shine">
+					<span style="width: 65%"></span>
+				</div>
+				<p>Set above to:
+					<a href="#" class="quarter">25%</a> /
+					<a href="#" class="half">50%</a> /
+					<a href="#" class="three-quarters">75%</a> /
+					<a href="#" class="full">100%</a>
+
+				</p>
+
+				<div class="progress-bar green glow">
+					<span style="width: 55%"></span>
+				</div>
+				<p>Set above to:
+					<a href="#" class="quarter">25%</a> /
+					<a href="#" class="half">50%</a> /
+					<a href="#" class="three-quarters">75%</a> /
+					<a href="#" class="full">100%</a>
+
+				</p>
+			
+			
+			
+			
+				</div>
 			</div>
+		</div>
+	</div>
+		
+			
   		</div><!-- End -->
   	</div>
   </div>
@@ -816,12 +855,30 @@
 	<script src="assets/js/custom/kendo-splitter.js"></script>
 	<script src="assets/js/custom/kendo-tree.js"></script>
 	<script src="assets/js/custom/kendo-equalizer.js"></script>
-
+<script>
+	$(document).ready(function(){ 
+		$('.quarter').click(function(){
+			$(this).parent().prev().children('span').css('width','25%');
+			});
+		$('.half').click(function(){
+			$(this).parent().prev().children('span').css('width','50%');
+			});
+		$('.three-quarters').click(function(){
+			$(this).parent().prev().children('span').css('width','75%');
+			});
+		$('.full').click(function(){
+			$(this).parent().prev().children('span').css('width','100%');
+			});			
+	});
+</script>
 
 	
 	<script src="assets/js/custom/chart-float-stacking.js"></script>	
 	<script src="assets/js/custom/chart-float-realtime.js"></script> 
 
+	
+	
+	
 </body>
 </html>
 
