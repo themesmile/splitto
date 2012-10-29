@@ -15,8 +15,10 @@
   
 }
 #right-pane {
-    background:rgba( 0, 0, 0, 0.15);
-	
+/*     background:rgba( 0, 0, 0, 0.15); */
+	background:#dEdEdE;
+	padding:15px 0 0 0;
+	overflow:hidden;
 }
 .pane-content {
 	padding: 0;
@@ -522,17 +524,34 @@
 .progress-nest{
 
 	background:#EEEEEE;
-	padding:25px 15px 0 15px; 
+	padding:10px 15px 0 15px; 
 	position:absolute;
 	bottom:0;
-	height:200px; 
+	height:280px; 
 	left:0;
 	right:0;
 	overflow:hidden;
-/* 	width:100%; */
-/* 	margin:0;	 */
 }
-
+.progress-report{
+	color:#333;
+	font-size:10px;
+	text-align:left;
+	padding:10px 0 0 0;
+	border-bottom:1px solid #ccc;
+	box-shadow: 0 1px 0 #fff;
+	padding: 10px 0 10px 0; 
+	
+}
+.progress-report span{
+	color:#fff;
+	font-size:10px;
+	text-align:right;
+	background-color:#ccc;
+	padding: 1px 3px 2px;
+	position:absolute;
+	right:15px;
+	border-radius:4px;
+}
 		/*---------------------------*/			
         
         .progress-bar {
