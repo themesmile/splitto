@@ -161,7 +161,6 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #ffffff;
 }
 
 a {
@@ -795,7 +794,7 @@ input[type="color"],
   display: inline-block;
   height: 18px;
   padding: 4px;
-  margin-bottom: -5px;
+  margin-bottom: 0;
   font-size: 13px;
   line-height: 18px;
   color: #555555;
@@ -3798,7 +3797,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .btn-group {
-  padding: 5px 5px 6px;
+  padding: 5px;
   margin: 0;
 }
 
