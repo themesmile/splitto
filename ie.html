@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Splitto Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/cus-icons.css" rel="stylesheet">
+
+	<link href="assets/css/datatable/demo_table_jui.css" rel="stylesheet">
+	<link href="assets/css/datatable/demo_page.css" rel="stylesheet">
+	<link href="assets/css/datatable/jquery-ui-1.8.4.custom.css" rel="stylesheet">
+	<!-- bin/jquery.slider.min.css -->
+
+  <!-- end -->
+
+	<style>
+	body {
+		padding-top: 0px;
+		position: relative;
+		z-index: -2;
+	}
+
+	</style>
+<!-- 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">    -->
+	<link href="assets/css/kendo/kendo.common.min.css" rel="stylesheet">
+	<link href="assets/css/kendo/kendo.default.min.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
+	<![endif]-->
+	
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+     <link rel="shortcut icon" href="assets/ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> 
+  </head>
+
+  <body>
+<div class="navbar navbar-fixed-top"><!-- TOP NAVBAR -->
+      <div class="navbar-inner">
+		<a href="#" class="brand"><img src="assets/img/logo.png"></a>
+      </div>
+	  <div class="nest-topleft">	 
+  				<ul class="nav">
+  					<li class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Arigato, Jhon Doe <b class="caret"></b></a>
+  						<ul class="dropdown-menu">
+  							<li><a href="#">Action</a></li>
+  							<li><a href="#">Another action</a></li>
+  							<li><a href="#">Something else here</a></li>
+  							<li class="divider"></li>
+  							<li><a href="#">Separated link</a></li>
+  						</ul>
+  					</li>
+  				</ul>
+  		</div>
+			<div class="nest-topright">	  
+
+  				<div class="btn-group">
+  					<button class="btn btn-inverse btn-mini"><i class="icon-comment icon-white"></i> Task <span class="label label-info">Urgent</span></button>
+  					<button class="btn btn-inverse btn-mini"><i class="icon-globe icon-white"></i> Notification<span class="badge badge-important">0</span></button>
+  					<button class="btn btn-inverse btn-mini"><i class="icon-envelope icon-white"></i> Messages<span class="badge badge-important">6</span></button>
+  				</div> 				 				
+  			</div>	
+</div><!-- END -->
+
+<div class="sub-topnav"><!-- SUB TOP NAVBAR -->
+		<ul class="breadcrumb">
+  						<li><i class="icon-home icon-white"></i></li>
+  						<li><a href="#">Home</a> <span class="divider">/</span></li>
+  						<li><a href="#">Library</a> <span class="divider">/</span></li>
+  						<li class="active">Data</li>
+		</ul>
+
+</div><!-- END -->
+  	
+
+
+<div id="vertical">
+  		<div id="horizontal" style="height: 100%; width: 100%;">
+  			<div id="left-pane"><!-- SIDEMENU -->
+				<div class="pane-content">
+						<ul class="topnav">
+							<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/graphic-design.png">Dashboard</a></li>
+							<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/graphic-design.png">Common</a>
+								<ul>
+									<li class="active"><a href="#">table</a></li>
+									<li><a href="#">Form</a></li>
+									<li><a href="#">Icons</a></li>
+									<li><a href="#">Calender</a></li>
+									<li><a href="#">Chart</a></li>
+								</ul>
+							
+							</li>
+							
+							<li><a href="#"><img class="sidebar-icon" alt="" src="assets/img/icons/stugart/login.png"> Widget</a>
+							<ul>
+								<li><a href="#">Button</a></li>
+								<li><a href="#">File manager</a></li>
+								<li><a href="#">Text Editor</a></li>
+								<li><a href="#">Ul Elemenet</a>
+									<ul>
+										<li><a href="#">CSS</a></li>
+										<li><a href="#">JavaScript</a></li>
+										<li><a href="#">JQuery</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Tabs</a></li>
+							</ul>
+							</li> 			
+						<li><a href="#">Contact<span class="label label-info">4</span></a></li>
+						<li><a href="#">Upload script</a></li>
+					</ul>
+				</div>
+			</div><!-- END -->
+			
+			<div id="center-pane"><!-- CONTENT -->
+			
+			</div><!-- END -->
+			
+			<div id="right-pane"><!-- RIGHT CONTENT -->
+				
+			</div><!-- End -->
+	 
+		</div>
+</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+ 
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/loader-splitto.js"></script>
+
+	
+	 <!-- CUSTOM-->	
+
+	<script src="assets/js/custom/custom-datatable.js"></script>
+	<script src="assets/js/custom/accordion.js"></script>
+<!-- 	<script src="assets/js/custom/justgauge.js"></script> -->
+	<script src="assets/js/custom/slider-theme.js"></script>
+	<script src="assets/js/custom/iphone-checkbox.js"></script>
+	<!-- KENDO-->	
+	<script src="assets/js/custom/kendo-splitter.js"></script>
+	<script src="assets/js/custom/kendo-tree.js"></script>
+	<script src="assets/js/custom/kendo-equalizer.js"></script>
+<script>
+	$(document).ready(function(){ 
+		$('.quarter').click(function(){
+			$(this).parent().prev().children('span').css('width','25%');
+			});
+		$('.half').click(function(){
+			$(this).parent().prev().children('span').css('width','50%');
+			});
+		$('.three-quarters').click(function(){
+			$(this).parent().prev().children('span').css('width','75%');
+			});
+		$('.full').click(function(){
+			$(this).parent().prev().children('span').css('width','100%');
+			});			
+	});
+</script>
+
+	
+	<script src="assets/js/custom/chart-float-stacking.js"></script>	
+	<script src="assets/js/custom/chart-float-realtime.js"></script> 
+
+	
+	
+	
+</body>
+</html>
+
