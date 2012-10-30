@@ -150,17 +150,17 @@
 		$("#vertical").kendoSplitter({
 			orientation: "vertical",
 			panes: [
-				{ collapsible: true, size: "60px" },
+				{ collapsible: true, size: "100px" },
 				{ collapsible: false },
-				{ collapsible: false, resizable: false, size: "10%" }
+				{ collapsible: false, resizable: false, size: "50%" }
 			]
 		});
 
 		$("#horizontal").kendoSplitter({
 			panes: [
-				{ collapsible: true, size: "100px" },
+				{ collapsible: true, min: "150px", max: "200px" },
 				{ collapsible: false },
-				{ collapsible: true, size: "20%" }
+				{ collapsible: true, collapsed: true, resizable: true }
 			]
 		});
 
