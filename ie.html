@@ -14,6 +14,9 @@
 	<link href="assets/css/datatable/demo_table_jui.css" rel="stylesheet">
 	<link href="assets/css/datatable/demo_page.css" rel="stylesheet">
 	<link href="assets/css/datatable/jquery-ui-1.8.4.custom.css" rel="stylesheet">
+	
+	<link rel='stylesheet' type='text/css' href='assets/css/fullcalendar/fullcalendar.css' />
+	<link rel='stylesheet' type='text/css' href='assets/css/fullcalendar/fullcalendar.print.css' media='print' />
 	<!-- bin/jquery.slider.min.css -->
 
   <!-- end -->
@@ -60,13 +63,18 @@
   					<button class="btn btn-inverse btn-mini"><i class="icon-envelope icon-white"></i> Messages<span class="badge badge-important">6</span></button>
   				</div> 				 				
   			</div>	
+			<div class="nest-topright2">	  
+			 	<div class="input-append">
+				  <input type="text" id="appendedInput" class="span2">
+				</div>		
+  			</div>	
 </div><!-- END -->
 
 <div class="sub-topnav"><!-- SUB TOP NAVBAR -->
 		<ul class="breadcrumb">
   						<li><i class="icon-home icon-white"></i></li>
-  						<li><a href="#">Home</a> <span class="divider">/</span></li>
-  						<li><a href="#">Library</a> <span class="divider">/</span></li>
+  						<li><a href="#">Home</a> <span class="divider">></span></li>
+  						<li><a href="#">Library</a> <span class="divider">></span></li>
   						<li class="active">Data</li>
 		</ul>
 
@@ -622,53 +630,10 @@
 					<div class="row-fluid">
 								<div class="span12">
 									<div class="nest">
-									<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Bar & Slider</h6></div>
+									<div class="title"><img class="titleIcon" alt="" src="assets/img/icons/berlin/archives.png"><h6>Calendar</h6></div>
 										<div class="body-nest">
-										
-												<div class="alert alert-success recent-user">
-													<button type="button" class="close" data-dismiss="alert"><i class="cus-cancel"></i></button>
-											  
-																				<div class="user-thumb">
-																					<img width="50" height="50" src="assets/img/id.png" alt="User">
-																				</div>
-																		
-																				
-																				<ul class="users-list">
-																				<li>Name: Jhon Doe</li>
-																				<li>IP:<span class="label label-success">186.125.47.102</span> Date: 	<span class="label label-info">1st Jan 2012</span></li>
-																				<li>User Type: 	<span class="label label-inverse">Paid</span>, Package Name:	<span class="label label-inverse">Silver</span></li>
-																				
-																				</ul>
-																			<div class="recent-user-action">
-																			<button class="btn btn-mini" href="#"><i class="cus-page-white-add"></i> Edit</button>
-																			<button class="btn btn-mini" href="#"><i class="cus-bin"></i> Delete</button>
-																			<button class="btn btn-mini" href="#"><i class="cus-tick"></i> Approve</button>
-																			</div>	
-												</div>
-			
-											
-									
-												<div class="alert alert-success recent-user">
-													<button type="button" class="close" data-dismiss="alert"><i class="cus-cancel"></i></button>
-											  
-																				<div class="user-thumb">
-																					<img width="50" height="50" src="assets/img/id.png" alt="User">
-																				</div>
-																		
-																				
-																				<ul class="users-list">
-																				<li>Name: Jhon Doe</li>
-																				<li>IP:<span class="label label-success">186.125.47.102</span> Date: 	<span class="label label-info">1st Jan 2012</span></li>
-																				<li>User Type: 	<span class="label label-inverse">Paid</span>, Package Name:	<span class="label label-inverse">Silver</span></li>
-																				
-																				</ul>
-																			<div class="recent-user-action">
-																			<button class="btn btn-mini" href="#"><i class="cus-page-white-add"></i> Edit</button>
-																			<button class="btn btn-mini" href="#"><i class="cus-bin"></i> Delete</button>
-																			<button class="btn btn-mini" href="#"><i class="cus-tick"></i> Approve</button>
-																			</div>	
-												</div>
-			
+											<div id='calendar'></div>
+								
 																						
 										</div>
 								</div>
@@ -750,6 +715,74 @@
 			$(this).parent().prev().children('span').css('width','100%');
 			});			
 	});
+</script>
+<script type='text/javascript'>
+
+	$(document).ready(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			theme: true,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			editable: true,
+			events: [
+				{
+					title: 'All Day Event',
+					start: new Date(y, m, 1)
+				},
+				{
+					title: 'Long Event',
+					start: new Date(y, m, d-5),
+					end: new Date(y, m, d-2)
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d-3, 16, 0),
+					allDay: false
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d+4, 16, 0),
+					allDay: false
+				},
+				{
+					title: 'Meeting',
+					start: new Date(y, m, d, 10, 30),
+					allDay: false
+				},
+				{
+					title: 'Lunch',
+					start: new Date(y, m, d, 12, 0),
+					end: new Date(y, m, d, 14, 0),
+					allDay: false
+				},
+				{
+					title: 'Birthday Party',
+					start: new Date(y, m, d+1, 19, 0),
+					end: new Date(y, m, d+1, 22, 30),
+					allDay: false
+				},
+				{
+					title: 'Click for Google',
+					start: new Date(y, m, 28),
+					end: new Date(y, m, 29),
+					url: 'http://google.com/'
+				}
+			]
+		});
+		
+	});
+
 </script>
 	<script src="assets/js/custom/custom-datatable.js"></script>
 	<script src="assets/js/custom/chart-float-stacking.js"></script>	

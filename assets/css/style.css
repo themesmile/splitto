@@ -126,19 +126,25 @@
 
 
 .nest-topright{
-		background:red;
-        position: absolute;
-        right: 5px;
-        top: 14px;
-        border-radius:5px;
-        border:1px solid #111;
-        box-shadow: 0 1px 0 #666; 
-		width:488px;
-		/* height:38px; */
-	/* 	background-color:rgba(0, 0, 0, 0.5); */
-		background: url("../img/black.png") repeat;
-		
-    }
+	background:red;
+    position: absolute;
+    right: 300px;
+    top: 14px;
+    border-radius:5px;
+    border:1px solid #111;
+    box-shadow: 0 1px 0 #666; 
+	width:488px;
+	background: url("../img/black.png") repeat;	
+}
+.nest-topright2{
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    border-radius:5px;
+    border:1px solid #111;
+	background: url("../img/black.png") repeat;	
+	padding:5px 5px 0;
+}
     .nest-topleft {
         border: 1px solid #111111;
         border-radius: 5px 5px 5px 5px;

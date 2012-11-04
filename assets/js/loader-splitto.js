@@ -23,11 +23,19 @@ document.writeln("<script type='text/javascript' src='assets/js/resources/justga
 
 document.writeln("<script type='text/javascript' src='assets/js/selectToUISlider.jQuery.js'></script>");
 
-document.writeln("<script type='text/javascript' src='assets/js/jquery-ui-1.8.16.custom.min.js'></script>");
+
 document.writeln("<script type='text/javascript' src='assets/js/jquery.flot.js'></script>");
 document.writeln("<script type='text/javascript' src='assets/js/jquery.flot.stack.js'></script>");
 document.writeln("<script type='text/javascript' src='assets/js/jquery.flot.resize.js'></script>");
 document.writeln("<script type='text/javascript' src='assets/js/jquery.dataTables.js'></script>");
+
+
+document.writeln("<script type='text/javascript' src='assets/js/jquery-ui-1.8.16.custom.min.js'></script>");
+document.writeln("<script type='text/javascript' src='assets/js/calendar/jquery-ui-1.8.23.custom.min.js'></script>");
+document.writeln("<script type='text/javascript' src='assets/js/calendar/fullcalendar.min.js'></script>");
+
+
+
 
 
 

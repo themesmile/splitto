@@ -1,19 +1,15 @@
 #vertical,#horizontal{
-        height:94%;
+        height:90%;
 		overflow:hidden;
 		margin-top:0;
+		width:100%;
 }
 body{
 	margin-top: 0;
 	padding-top:0;
 }
-.container-fluid{
-	padding-bottom:30px!important;
-}
-.container-fluid{
-	margin:0;
-	padding:0 40px 0 25px;
-}
+
+
 .span11 {
   width: 860px;
   float:left; margin-right:10px;
@@ -140,9 +136,7 @@ body{
   float:left; margin-right:10px;
   *width: 6.329787233638298%;
 }
-tr.odd{
-	margin:0;
-}
+
  /* =================
     		  BAR 
  ==================*/
@@ -230,6 +224,3 @@ ul.topnav span{
 .nest .title .titleIcon{
 		display:none;
     }
-.title{
-		background:red;
-}
