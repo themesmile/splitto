@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function(){ 	
     var d1 = [];
     for (var i = 0; i <= 10; i += 1)
         d1.push([i, parseInt(Math.random() * 30)]);

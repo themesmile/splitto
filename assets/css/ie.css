@@ -1,9 +1,148 @@
 #vertical,#horizontal{
-        height:100%;
+        height:94%;
 		overflow:hidden;
 		margin-top:0;
 }
+body{
+	margin-top: 0;
+	padding-top:0;
+}
+.container-fluid{
+	padding-bottom:30px!important;
+}
+.container-fluid{
+	margin:0;
+	padding:0 40px 0 25px;
+}
+.span11 {
+  width: 860px;
+  float:left; margin-right:10px;
+}
 
+.span10 {
+  width: 780px;
+    float:left; margin-right:10px;
+}
+
+.span9 {
+  width: 700px;
+    float:left; margin-right:10px;
+}
+
+.span8 {
+  width: 620px;
+    float:left; margin-right:10px;
+}
+
+.span7 {
+  width: 540px;
+    float:left; margin-right:10px;
+}
+
+.span6 {
+  width: 460px;
+    float:left; margin-right:10px;
+}
+
+.span5 {
+  width: 380px;
+    float:left; margin-right:10px;
+}
+
+.span4 {
+  width: 300px;
+    float:left; margin-right:10px;
+}
+
+.span3 {
+  width: 220px;
+    float:left; margin-right:10px;
+}
+
+.span2 {
+  width: 140px;
+    float:left; margin-right:10px;
+}
+
+.span1 {
+  width: 60px;
+    float:left; margin-right:10px;
+}
+
+.row-fluid .span12 {
+  width: 100%;
+  float:left; margin-right:10px;
+
+}
+
+.row-fluid .span11 {
+  width: 91.489361693%;
+  float:left; margin-right:10px;
+  *width: 91.4361702036383%;
+}
+
+.row-fluid .span10 {
+  width: 82.97872339599999%;
+    float:left; margin-right:10px;
+  *width: 82.92553190663828%;
+}
+
+.row-fluid .span9 {
+  width: 74.468085099%;
+    float:left; margin-right:10px;
+  *width: 74.4148936096383%;
+}
+
+.row-fluid .span8 {
+  width: 65.95744680199999%;
+    float:left; margin-right:10px;
+  *width: 65.90425531263828%;
+}
+
+.row-fluid .span7 {
+  width: 57.446808505%;
+    float:left; margin-right:10px;
+  *width: 57.3936170156383%;
+}
+
+.row-fluid .span6 {
+  width: 48.93617020799999%;
+    float:left; margin-right:10px;
+  *width: 48.88297871863829%;
+}
+
+.row-fluid .span5 {
+  width: 40.425531911%;
+  float:left; margin-right:10px;
+  *width: 40.3723404216383%;
+}
+
+.row-fluid .span4 {
+  width: 31.914893614%;
+  float:left; margin-right:5px;
+  *width: 31.8617021246383%;
+}
+
+.row-fluid .span3 {
+  width: 23.404255317%;
+  float:left; margin-right:10px;
+  *width: 23.3510638276383%;
+}
+
+.row-fluid .span2 {
+  width: 14.89361702%;
+  float:left; margin-right:10px;
+  *width: 14.8404255306383%;
+}
+
+.row-fluid .span1 {
+  width: 6.382978723%;
+  float:left; margin-right:10px;
+  *width: 6.329787233638298%;
+}
+tr.odd{
+	margin:0;
+}
  /* =================
     		  BAR 
  ==================*/
@@ -86,4 +225,11 @@ ul.topnav span{
     border-width: 0 1px;
     top: 0;
     width: 7px!important;
+}
+
+.nest .title .titleIcon{
+		display:none;
+    }
+.title{
+		background:red;
 }

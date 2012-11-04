@@ -1,6 +1,4 @@
 
-      var g1, g3, g4, g5, g6;
-      
       window.onload = function(){
       var g1 = new JustGage({
         id: "g1", 

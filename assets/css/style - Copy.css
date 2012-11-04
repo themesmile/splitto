@@ -7,24 +7,17 @@
 	background-color: rgba(60, 70, 80, 0.15);
 }
 #left-pane {
-	text-align:left;
 	background: #EEEEEE;
-	direction: rtl;
-    display: block;
-	scrollbar-face-color: #336699; scrollbar-3dlight-color: #336699; scrollbar-base-color: #336699;
-	scrollbar-track-color: #000; scrollbar-darkshadow-color: #000; scrollbar-arrow-color: #000;
-	scrollbar-shadow-color: #fff; scrollbar-highlight-color: #fff;
 }
-.wrap-content {
+#center-pane {
 	background:rgba( 0, 0, 0, 0.1);
   
 }
 #right-pane {
+/*     background:rgba( 0, 0, 0, 0.15); */
 	background:#dEdEdE;
-	overflow:auto;
-	scrollbar-face-color: #336699; scrollbar-3dlight-color: #336699; scrollbar-base-color: #336699;
-	scrollbar-track-color: #336699; scrollbar-darkshadow-color: #000; scrollbar-arrow-color: #000;
-	scrollbar-shadow-color: #fff; scrollbar-highlight-color: #fff;
+	padding:15px 0 0 0;
+	overflow:hidden;
 }
 .pane-content {
 	padding: 0;
@@ -32,9 +25,6 @@
 .ie-nest{
 	width:700px;
 
-}
-.container-fluid{
-	padding-bottom:30px;
 }
 
 /* TOP NAV */	
@@ -53,12 +43,29 @@
     padding-right: 20px;
     padding-left: 20px;
     background: url("../img/topnav.png") repeat-x scroll 0 0 transparent;
-}	
+    
+    		/*   background-color: #2c2c2c;
+    		  background-image: -moz-linear-gradient(top, #333333, #222222);
+    		  background-image: -ms-linear-gradient(top, #333333, #222222);
+    		  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    		  background-image: -webkit-linear-gradient(top, #333333, #222222);
+    		  background-image: -o-linear-gradient(top, #333333, #222222);
+    		  background-image: linear-gradient(top, #333333, #222222);
+    		  background-repeat: repeat-x;
+    		  -webkit-border-radius: 4px;
+    			 -moz-border-radius: 4px;
+    				  border-radius: 4px;
+    		  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+    		  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    			 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+               box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1); */
+
+           }	
            /* tree view */
 
-#treeview-sprites .k-sprite {
+           #treeview-sprites .k-sprite {
             background-image: url("../img/coloricons-sprite.png");
-}
+        }
         .rootfolder 
         {
             background-position: 0 0;	
@@ -116,16 +123,16 @@
     }
 
 #vertical,#horizontal{
-    height: 91.9%;
-    margin-top: 52px;
-    overflow: hidden;
+        height:90%;
+		overflow:hidden;
+		margin-top: 54px;
 }
 
     
-/* SIDEBAR */
+    /* SIDEBAR */
 
 
-.nest-topright{
+    .nest-topright{
 		background:red;
         position: absolute;
         right: 5px;
@@ -390,7 +397,6 @@ ul.topnav li a {
 	
     img.sidebar-icon{
     	margin: 0 6px 0 0;
-		float:left;
     }
 	
 	   #g1, #g2, #g3, #g4, #g5, #g6 {
@@ -511,6 +517,7 @@ ul.topnav li a {
 
 /* RIGHT CONTENT */
 .progress-nest{
+
 	background:#EEEEEE;
 	padding:10px 15px 0 15px; 
 	position:absolute;
@@ -518,7 +525,7 @@ ul.topnav li a {
 	height:280px; 
 	left:0;
 	right:0;
-	
+	overflow:hidden;
 }
 .progress-report{
 	color:#333;
@@ -540,7 +547,7 @@ ul.topnav li a {
 	right:15px;
 	border-radius:4px;
 }
-	
+		/*---------------------------*/			
         
 .progress-bar {
     background-color: #ccc;

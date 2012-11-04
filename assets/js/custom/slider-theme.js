@@ -2,7 +2,7 @@
     $(document).ready(function() {
     	
     	
-    	$("#right-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:7,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"});
+    	$("#right-pane").niceScroll({touchbehavior:true,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:7,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"});
 				$("#left-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:false,cursoropacitymax:0.7,cursorwidth:6,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 				
 				$("#center-pane").niceScroll({touchbehavior:false,cursorcolor:"#000",boxzoom:true,cursoropacitymax:0.7,cursorwidth:6,cursorborderradius:"4px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
